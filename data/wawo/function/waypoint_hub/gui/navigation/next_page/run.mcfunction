@@ -1,0 +1,1 @@
+execute as @n[type=marker,tag=wawo.waypoint_hub.marker] at @s if score @s wawo.waypoint_hub.gui.page < $max_page wawo.waypoint_hub.gui.page if score @s wawo.waypoint_hub.gui.page matches 1.. run function wawo:waypoint_hub/gui/navigation/next_page/exec

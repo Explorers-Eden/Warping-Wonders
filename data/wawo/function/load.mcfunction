@@ -7,8 +7,10 @@ scoreboard objectives add wawo.goat_horn.toggle dummy
 scoreboard objectives add wawo.goat_horn.timer dummy
 scoreboard objectives add wawo.waypoint_hub.id dummy
 scoreboard objectives add wawo.waypoint_hub.gui.page dummy
+scoreboard objectives add wawo.waypoint_hub.gui.slot dummy
 scoreboard objectives add wawo.waypoint_hub.gui.in_use dummy
 scoreboard objectives add wawo.waypoint_hub.gui.entry_id dummy
+scoreboard objectives add wawo.waypoint_hub.gui.head dummy
 
 ##scoreboard dummy entries
 scoreboard players set $2 eden.technical 2
@@ -27,3 +29,6 @@ data remove storage eden:temp recovery_compass
 schedule function wawo:schedules/1s 1s
 schedule function wawo:schedules/5t 5t
 schedule function wawo:schedules/1t 1t
+
+##create waypoint_icons db
+function wawo:waypoint_hub/database/waypoint_icons/create
