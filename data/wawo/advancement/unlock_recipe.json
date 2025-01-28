@@ -7,7 +7,42 @@
     "rewards": {
       "recipes": [
         "eden:crafting_shaped/portal_horn",
-        "eden:crafting_shaped/waypoint_hub"
+        "eden:crafting_shaped/waypoint_hub/deepslate",
+        "eden:crafting_shaped/waypoint_hub/andesite",
+        "eden:crafting_shaped/waypoint_hub/basalt",
+        "eden:crafting_shaped/waypoint_hub/blackstone",
+        "eden:crafting_shaped/waypoint_hub/diorite",
+        "eden:crafting_shaped/waypoint_hub/granite",
+        "eden:crafting_shaped/waypoint_hub/tuff",
+        "eden:crafting_shaped/waypoint_hub/sculk",
+        "eden:crafting_shaped/waypoint_hub/sandstone",
+        "eden:crafting_shaped/waypoint_hub/red_sandstone",
+        "eden:crafting_shaped/waypoint_hub/copper",
+        "eden:crafting_shaped/waypoint_hub/exposed_copper",
+        "eden:crafting_shaped/waypoint_hub/weathered_copper",
+        "eden:crafting_shaped/waypoint_hub/oxidizied_copper",
+        "eden:crafting_shaped/waypoint_hub/prismarine",
+        "eden:crafting_shaped/waypoint_hub/dark_prismarine",
+        "eden:crafting_shaped/waypoint_hub/acacia",
+        "eden:crafting_shaped/waypoint_hub/bamboo",
+        "eden:crafting_shaped/waypoint_hub/birch",
+        "eden:crafting_shaped/waypoint_hub/cherry",
+        "eden:crafting_shaped/waypoint_hub/crimson",
+        "eden:crafting_shaped/waypoint_hub/dark_oak",
+        "eden:crafting_shaped/waypoint_hub/end_stone",
+        "eden:crafting_shaped/waypoint_hub/hay",
+        "eden:crafting_shaped/waypoint_hub/jungle",
+        "eden:crafting_shaped/waypoint_hub/mangrove",
+        "eden:crafting_shaped/waypoint_hub/melon",
+        "eden:crafting_shaped/waypoint_hub/oak",
+        "eden:crafting_shaped/waypoint_hub/obsidian",
+        "eden:crafting_shaped/waypoint_hub/packed_mud",
+        "eden:crafting_shaped/waypoint_hub/pale_oak",
+        "eden:crafting_shaped/waypoint_hub/pumpkin",
+        "eden:crafting_shaped/waypoint_hub/purpur",
+        "eden:crafting_shaped/waypoint_hub/quartz",
+        "eden:crafting_shaped/waypoint_hub/spruce",
+        "eden:crafting_shaped/waypoint_hub/warped"
       ]
     }
   }

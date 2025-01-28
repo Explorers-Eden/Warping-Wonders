@@ -27,6 +27,7 @@ data remove storage eden:temp recovery_compass
 
 ##init schedules
 schedule function wawo:schedules/1s 1s
+schedule function wawo:schedules/2s 2s
 schedule function wawo:schedules/5t 5t
 schedule function wawo:schedules/1t 1t
 

@@ -1,0 +1,46 @@
+  {
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "waypoints",
+    "pattern": [
+      " X ",
+      "EBE",
+      "OOO"
+    ],
+    "key": {
+      "X": "minecraft:ender_eye",
+      "B": "minecraft:purple_carpet",
+      "O": "minecraft:dark_prismarine",
+      "E": "minecraft:raw_gold"
+    },
+    "result": {
+      "id": "minecraft:armor_stand",
+      "count": 1,
+      "components": {
+        "minecraft:item_model": "wawo:waypoint_hub/dark_prismarine",
+        "minecraft:max_stack_size": 1,
+        "minecraft:item_name": "{\"fallback\":\"Dark Prismarine Waypoint Hub\",\"translate\":\"items.wawo.dark_prismarine_waypoint_hub\"}",
+        "minecraft:custom_data": "{items:waypoint_hub}",
+        "minecraft:entity_data": 
+        {
+          "id": "minecraft:armor_stand",
+          "Small": 1,
+          "Invulnerable": 1,
+          "Invisible": 1,
+          "ShowArms": 1,
+          "Marker": 1,
+          "NoBasePlate": 1,
+          "Tags": [
+            "wawo.waypoint_hub.spawner",
+            "wawo.waypoint_hub.type.dark_prismarine"
+        ]
+        },
+"minecraft:rarity": "uncommon",
+"minecraft:lore": [
+  "{\"bold\":false,\"color\":\"gray\",\"fallback\":\"• Rename in Anvil for custom Waypoint name\",\"italic\":false,\"translate\":\"items.eden.waypoint_hub.desc_1\"}",
+  "{\"bold\":false,\"color\":\"gray\",\"fallback\":\"• Needs to be placed at least 32 blocks apart\",\"italic\":false,\"translate\":\"items.eden.waypoint_hub.desc_2\"}"
+]
+}
+    }
+  }
+  
