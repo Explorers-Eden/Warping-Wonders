@@ -27,9 +27,13 @@ data remove storage eden:temp recovery_compass
 
 ##init schedules
 schedule function wawo:schedules/1s 1s
-schedule function wawo:schedules/2s 2s
 schedule function wawo:schedules/5t 5t
 schedule function wawo:schedules/1t 1t
+
+## ambient sound schedules
+schedule function wawo:waypoint_hub/ambient_sounds/portal 10s
+schedule function wawo:waypoint_hub/ambient_sounds/beacon 2s
+schedule function wawo:waypoint_hub/ambient_sounds/conduit 9s
 
 ##create waypoint_icons db
 function wawo:waypoint_hub/database/waypoint_icons/create
