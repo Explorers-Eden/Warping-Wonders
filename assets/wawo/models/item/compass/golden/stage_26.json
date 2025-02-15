@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "wawo:item/compass/golden_compass_base",
+      "layer1": "wawo:item/compass/red_accent/stage_26"
+    }
+  }
