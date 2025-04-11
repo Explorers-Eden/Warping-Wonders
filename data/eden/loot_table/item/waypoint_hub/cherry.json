@@ -16,7 +16,7 @@
               "components": {
                 "minecraft:item_model": "wawo:waypoint_hub/cherry",
                 "minecraft:max_stack_size": 1,
-                "minecraft:item_name": "{\"fallback\":\"Cherry Waypoint Hub\",\"translate\":\"items.wawo.cherry_waypoint_hub\"}",
+                "minecraft:item_name": {"fallback":"Cherry Waypoint Hub","translate":"items.wawo.cherry_waypoint_hub"},
                 "minecraft:custom_data": "{items:waypoint_hub}",
                 "minecraft:entity_data": {
                   "id": "minecraft:armor_stand",
@@ -33,8 +33,8 @@
                 },
                 "minecraft:rarity": "uncommon",
                 "minecraft:lore": [
-                  "{\"bold\":false,\"color\":\"gray\",\"fallback\":\"• Rename in Anvil for custom Waypoint name\",\"italic\":false,\"translate\":\"items.eden.waypoint_hub.desc_1\"}",
-                  "{\"bold\":false,\"color\":\"gray\",\"fallback\":\"• Needs to be placed at least 32 blocks apart\",\"italic\":false,\"translate\":\"items.eden.waypoint_hub.desc_2\"}"
+                  {"bold":false,"color":"gray","fallback":"• Rename in Anvil for custom Waypoint name","italic":false,"translate":"items.eden.waypoint_hub.desc_1"},
+                  {"bold":false,"color":"gray","fallback":"• Needs to be placed at least 32 blocks apart","italic":false,"translate":"items.eden.waypoint_hub.desc_2"}
                 ]
               }
             }

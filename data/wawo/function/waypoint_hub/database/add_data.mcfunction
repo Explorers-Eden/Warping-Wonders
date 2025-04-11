@@ -1,5 +1,4 @@
-$data modify storage eden:waypoint_db waypoints.$(id).waypoint_name_escaping set from entity @s CustomName
-$data modify storage eden:waypoint_db waypoints.$(id).waypoint_name set string storage eden:waypoint_db waypoints.$(id).waypoint_name_escaping 1 -1
+$data modify storage eden:waypoint_db waypoints.$(id).waypoint_name set from entity @s CustomName
 $data modify storage eden:waypoint_db waypoints.$(id).pos.x set value $(x)
 $data modify storage eden:waypoint_db waypoints.$(id).pos.y set value $(y)
 $data modify storage eden:waypoint_db waypoints.$(id).pos.z set value $(z)

@@ -116,6 +116,13 @@
     "minecraft:zombie_head",
     "minecraft:creeper_head",
     "minecraft:piglin_head",
-    "minecraft:dragon_head"
+    "minecraft:dragon_head",
+    "minecraft:leaf_litter",
+    "minecraft:cactus_flower",
+    "minecraft:wildflowers",
+    "minecraft:firefly_bush",
+    "minecraft:bush",
+    "minecraft:short_dry_grass",
+    "minecraft:tall_dry_grass"
   ]
 }

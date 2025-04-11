@@ -13,7 +13,8 @@
         "eden:crafting_shaped/compass/golden_compass",
         "eden:crafting_shaped/compass/lapis_compass",
         "eden:crafting_shaped/compass/quartz_compass",
-        "eden:crafting_shaped/compass/resin_compass"
+        "eden:crafting_shaped/compass/resin_compass",
+        "eden:crafting_transmute/compass_clone"
       ]
     }
   }

@@ -34,4 +34,4 @@ execute at @s if data entity @s Inventory[{Slot:32b}].components.minecraft:lodes
 execute at @s if data entity @s Inventory[{Slot:33b}].components.minecraft:lodestone_tracker.target run item modify entity @s container.33 eden:wawo/compass/set_components
 execute at @s if data entity @s Inventory[{Slot:34b}].components.minecraft:lodestone_tracker.target run item modify entity @s container.34 eden:wawo/compass/set_components
 execute at @s if data entity @s Inventory[{Slot:35b}].components.minecraft:lodestone_tracker.target run item modify entity @s container.35 eden:wawo/compass/set_components
-execute at @s if data entity @s Inventory[{Slot:-106b}].components.minecraft:lodestone_tracker.target run item modify entity @s weapon.offhand eden:wawo/compass/set_components
+execute at @s if data entity @s equipment.offhand.components.minecraft:lodestone_tracker.target run item modify entity @s weapon.offhand eden:wawo/compass/set_components
