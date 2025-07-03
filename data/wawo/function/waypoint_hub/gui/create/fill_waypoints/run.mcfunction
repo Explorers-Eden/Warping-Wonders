@@ -1,4 +1,4 @@
-$execute if score @s wawo.waypoint_hub.gui.entry_id matches 0 run data remove storage eden:waypoint_tp waypoints.$(temp_id)
+$execute if score @s wawo.waypoint_hub.gui.entry_id matches 0 run data remove storage eden:database waypoints.gui.$(temp_id)
 
 $execute store result storage eden:temp waypoint_gui.entries.$(temp_id).page int 1 run scoreboard players get @s wawo.waypoint_hub.gui.page
 $execute store result storage eden:temp waypoint_gui.entries.$(temp_id).slot int 1 run scoreboard players get @s wawo.waypoint_hub.gui.slot

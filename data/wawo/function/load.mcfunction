@@ -16,8 +16,8 @@ scoreboard objectives add wawo.waypoint_hub.gui.head dummy
 scoreboard players set $2 eden.technical 2
 
 ##wipe data on load
-data remove storage eden:waypoint_tp waypoints
-data remove storage eden:waypoint_tp teleport
+data remove storage eden:database waypoints.gui
+data remove storage eden:temp waypoint_tp.teleport
 data remove storage eden:temp waypoint_gui
 data remove storage eden:temp waypoint
 data remove storage eden:temp clock
@@ -37,3 +37,7 @@ schedule function wawo:waypoint_hub/ambient_sounds/conduit 9s
 
 ##create waypoint_icons db
 function wawo:waypoint_hub/database/waypoint_icons/create
+
+##transfer old waypoints to new storage
+data modify storage eden:database waypoints.hubs set from storage eden:database waypoints.hubs
+data modify storage eden:database waypoints.hubs set from storage eden:database waypoints.gui

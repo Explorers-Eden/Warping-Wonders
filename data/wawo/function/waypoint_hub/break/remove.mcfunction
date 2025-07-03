@@ -1,5 +1,5 @@
-$data remove storage eden:waypoint_db waypoints.$(id)
-$data remove storage eden:waypoint_tp waypoints.$(id)
+$data remove storage eden:database waypoints.hubs.$(id)
+$data remove storage eden:database waypoints.gui.$(id)
 kill @e[type=item_display,tag=wawo.waypoint_hub.display,distance=..2.5]
 kill @e[type=block_display,tag=wawo.waypoint_hub.display,distance=..2.5]
 kill @e[type=text_display,tag=wawo.waypoint_hub.display,distance=..2.5]
