@@ -3,9 +3,11 @@ scoreboard objectives add eden.technical dummy
 
 ##additional scoreboards
 scoreboard objectives add wawo.inv_slot dummy
+scoreboard objectives add wawo.exp_lvl dummy
 scoreboard objectives add wawo.goat_horn.toggle dummy
 scoreboard objectives add wawo.goat_horn.timer dummy
 scoreboard objectives add wawo.waypoint_hub.id dummy
+scoreboard objectives add wawo.waypoint_hub.player.limit dummy
 scoreboard objectives add wawo.waypoint_hub.gui.page dummy
 scoreboard objectives add wawo.waypoint_hub.gui.slot dummy
 scoreboard objectives add wawo.waypoint_hub.gui.in_use dummy
@@ -38,6 +40,10 @@ schedule function wawo:waypoint_hub/ambient_sounds/conduit 9s
 ##create waypoint_icons db
 function wawo:waypoint_hub/database/waypoint_icons/create
 
+##add initial settings
+execute unless data storage eden:settings warping_wonders run function wawo:default_values
+
 ##transfer old waypoints to new storage
 data modify storage eden:database waypoints.hubs set from storage eden:database waypoints.hubs
 data modify storage eden:database waypoints.hubs set from storage eden:database waypoints.gui
+

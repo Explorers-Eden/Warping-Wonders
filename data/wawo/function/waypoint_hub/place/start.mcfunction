@@ -1,4 +1,8 @@
-execute if entity @e[type=marker,tag=wawo.waypoint_hub.marker,distance=..32] run return run function wawo:waypoint_hub/place/invalid_position
+$execute if entity @e[type=marker,tag=wawo.waypoint_hub.marker,distance=..$(min_distance)] run return run function wawo:waypoint_hub/place/invalid_position
+execute unless data storage eden:settings warping_wonders.waypoint_hub{active:"enabled"} run return run function wawo:waypoint_hub/place/feature_disabled
+
+execute if score @s wawo.waypoint_hub.player.limit >= $max_limit wawo.waypoint_hub.player.limit run return function wawo:waypoint_hub/place/limit_exceeded
+scoreboard players add @s wawo.waypoint_hub.player.limit 1
 
 execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.deepslate] at @s run return run function wawo:waypoint_hub/place/deepslate/init
 execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.andesite] at @s run return run function wawo:waypoint_hub/place/andesite/init

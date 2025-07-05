@@ -1,4 +1,4 @@
-$execute as @e[nbt={leash: {UUID:$(uuid)}}] in $(dimension) positioned $(x) $(y) $(z) run tp @s ~1 ~.5 ~
+$execute if data storage eden:settings warping_wonders.waypoint_hub{mob_teleport:"enabled"} as @e[nbt={leash: {UUID:$(uuid)}}] in $(dimension) positioned $(x) $(y) $(z) run tp @s ~1 ~.5 ~
 $execute at @s unless predicate eden:entity/is_riding in $(dimension) positioned $(x) $(y) $(z) run tp @s ~1 ~.5 ~
 $execute at @s if predicate eden:entity/is_riding in $(dimension) positioned $(x) $(y) $(z) run tp @n[type=#eden:is_mount,nbt={Saddle:1b}] ~1 ~.5 ~
 

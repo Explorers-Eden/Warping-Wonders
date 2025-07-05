@@ -1,0 +1,125 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "description": {
+      "translate": "menu.warping_wonders.main.description",
+      "fallback": "Select An Option To Configure:"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.warping_wonders.main.title.external",
+    "fallback": "Warping Wonders"
+  },
+  "title": {
+    "translate": "menu.warping_wonders.main.title",
+    "fallback": "Warping Wonders: Admin Configuration"
+  },
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "mco.selectServer.close"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "translate": "item.minecraft.clock"
+      },
+      "tooltip": {
+        "translate": "option.warping_wonders.clock.tooltip",
+        "fallback": "Configure settings for teleporting back to a spawnpoint with a Clock."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function wawo:dialog/dynamic/clock with storage eden:settings warping_wonders.clock"
+      }
+    },
+    {
+      "label": {
+        "translate": "item.minecraft.compass"
+      },
+      "tooltip": {
+        "translate": "option.warping_wonders.compass.tooltip",
+        "fallback": "Configure settings for teleporting to a Lodestone with a Compass."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function wawo:dialog/dynamic/compass with storage eden:settings warping_wonders.compass"
+      }
+    },
+    {
+      "label": {
+        "translate": "item.minecraft.recovery_compass"
+      },
+      "tooltip": {
+        "translate": "option.warping_wonders.recovery_compass.tooltip",
+        "fallback": "Configure settings for teleporting back to a players last death location with a Recovery Compass."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function wawo:dialog/dynamic/recovery_compass with storage eden:settings warping_wonders.recovery_compass"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.eden.portal_horn",
+        "fallback": "Portal Horn"
+      },
+      "tooltip": {
+        "translate": "option.warping_wonders.portal_horn.tooltip",
+        "fallback": "Configure settings for teleporting to players with Portal Horns."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function wawo:dialog/dynamic/portal_horn with storage eden:settings warping_wonders.portal_horn"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.eden.waypoint_hub",
+        "fallback": "Waypoint Hub"
+      },
+      "tooltip": {
+        "translate": "option.warping_wonders.waypoint_hub.tooltip",
+        "fallback": "Configure settings for Waypoint Hubs."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function wawo:dialog/dynamic/waypoint_hub with storage eden:settings warping_wonders.waypoint_hub"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.warping_wonders.restore.title",
+        "fallback": "Restore Default Settings",
+        "color": "gray"
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "wawo:restore_default"
+      }
+    },
+    {
+       "label": {
+        "translate": "menu.eden.info.title",
+        "fallback": "Explorer's Eden",
+        "color": "gray"
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "wawo:info"
+      }
+    }
+  ]
+}

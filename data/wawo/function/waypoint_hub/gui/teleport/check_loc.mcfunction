@@ -1,3 +1,6 @@
+execute store result storage eden:temp waypoint_hub.exp_level int 1 run experience query @s levels
+execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:temp","path":"waypoint_hub.exp_level"},"range":{"min":{"type":"minecraft:storage","storage":"eden:settings","path":"warping_wonders.waypoint_hub.exp_cost"}}} run return run title @p actionbar {"bold":false,"color":"red","fallback":"Insufficient EXP Level","italic":false,"translate":"msg.eden.general.insufficient_exp"}
+
 $execute in $(dimension) run forceload add $(x) $(z)
 
 $execute in $(dimension) positioned $(x) $(y) $(z) unless block ~1 ~-1 ~ #eden:unsafe_to_tp if block ~1 ~ ~ #eden:safe_to_tp if block ~1 ~1 ~ #eden:safe_to_tp run return run function wawo:waypoint_hub/gui/teleport/exec_tp/pos_1 with storage eden:temp waypoint_tp.teleport
