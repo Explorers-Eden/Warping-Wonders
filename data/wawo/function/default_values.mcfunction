@@ -51,7 +51,7 @@ data modify storage eden:settings warping_wonders.waypoint_hub merge value {\
 active:"enabled",\
 active_initial: "false",\
 exp_cost:5,\
-min_distance:128,\
+min_distance:64,\
 player_limit:32,\
 mob_teleport:"enabled",\
 mob_teleport_initial:"false",\

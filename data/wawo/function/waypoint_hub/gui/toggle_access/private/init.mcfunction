@@ -1,0 +1,2 @@
+execute as @n[type=marker,tag=wawo.waypoint_hub.marker] at @s store result storage eden:temp waypoint.entry_id int 1 run scoreboard players get @s wawo.waypoint_hub.id
+execute as @n[type=marker,tag=wawo.waypoint_hub.marker] at @s run function wawo:waypoint_hub/gui/toggle_access/private/exec with storage eden:temp waypoint

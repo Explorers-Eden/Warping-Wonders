@@ -1,0 +1,18 @@
+## Changes:
+- Moved Waypoint Hub storage location - Old Waypoints get tranferred automatically
+- Teleporting sounds for Clocks & Recovery Compasses are now played when using the item instead of after using it
+- Flipping a page in a Waypoint Hub GUI now plays a sound
+- Changing Icons for Waypoints can now be done simply by right/left clicking the Icon floating above the Hub instead of using the GUI
+- Waypoints can now be renamed by right/left clicking the Icon floating above the Hub with a renamed Name Tag
+- Added several new Waypoint Hub Icons
+- Waypoint access can now be set to public/private within the GUI menu (if set to private, only the owner can tp to it and see the coords in the GUI menu)
+- Waypoints can now announce if someone teleported to them to other players that are within the reach of the destination Waypoint (Can be En-/Disabled per Waypoint in the GUI menu)
+- Added admin configuration menu: 
+    - Can be opened by using the command: **/function warping_wonders**
+    - Added options to en-/disable each feature (Waypoint Hubs & Portal Horns can still be crafted but won't work)
+    - Added options to configure EXP Level costs for each teleport action
+    - Added options to configure chance of the item breaking when using (except for Waypoint Hubs)
+    - Added options to en-/disable teleporting leashed mobs alongside players 
+    - Added option to configure the min distance between Waypoint Hubs
+    - Added option to configure max limit of Waypoint Hubs a player can place (Does not apply to already placed Hubs)
+    - Added option to configure cooldown for Portal Horns

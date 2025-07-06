@@ -3,7 +3,7 @@ execute if score @s wawo.goat_horn.toggle matches 1.. run return fail
 
 execute unless data storage eden:settings warping_wonders.portal_horn{active:"enabled"} run return fail
 execute store result storage eden:temp portal_horn.exp_level int 1 run experience query @s levels
-execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:temp","path":"portal_horn.exp_level"},"range":{"min":{"type":"minecraft:storage","storage":"eden:settings","path":"warping_wonders.portal_horn.exp_cost"}}} run return fail
+execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:temp","path":"portal_horn.exp_level"},"range":{"min":{"type":"minecraft:storage","storage":"eden:settings","path":"warping_wonders.portal_horn.exp_cost"}}} run return run title @s actionbar {"bold":false,"color":"red","fallback":"Insufficient EXP Level","italic":false,"translate":"msg.eden.general.insufficient_exp"}
 
 data modify storage eden:temp goat_horn.tp.exp_cost set from storage eden:settings warping_wonders.portal_horn.exp_cost
 

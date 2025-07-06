@@ -1,0 +1,2 @@
+title @s actionbar {"bold":false,"color":"red","fallback":"Insufficient EXP Level","italic":false,"translate":"msg.eden.general.insufficient_exp"}
+schedule function wawo:compass/remainder_data/schedule 1t

@@ -1,3 +1,5 @@
+playsound minecraft:item.book.page_turn master @p ~ ~ ~ 1 1
+
 scoreboard players set @s wawo.waypoint_hub.gui.slot 0
 scoreboard players remove @s wawo.waypoint_hub.gui.page 1
 

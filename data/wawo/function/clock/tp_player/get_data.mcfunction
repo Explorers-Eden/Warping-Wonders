@@ -2,7 +2,7 @@ advancement revoke @s only wawo:consumed_clock
 
 execute unless data storage eden:settings warping_wonders.clock{active:"enabled"} run return fail
 execute store result storage eden:temp clock.exp_level int 1 run experience query @s levels
-execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:temp","path":"clock.exp_level"},"range":{"min":{"type":"minecraft:storage","storage":"eden:settings","path":"warping_wonders.clock.exp_cost"}}} run return run give @s minecraft:clock
+execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:temp","path":"clock.exp_level"},"range":{"min":{"type":"minecraft:storage","storage":"eden:settings","path":"warping_wonders.clock.exp_cost"}}} run return run function wawo:clock/tp_player/insufficient_exp
 
 data modify storage eden:temp clock.tp.dimension set from entity @s Dimension
 data modify storage eden:temp clock.tp.x set from entity @s Pos[0]

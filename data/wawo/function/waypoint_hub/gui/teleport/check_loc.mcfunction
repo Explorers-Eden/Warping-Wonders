@@ -1,5 +1,5 @@
 execute store result storage eden:temp waypoint_hub.exp_level int 1 run experience query @s levels
-execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:temp","path":"waypoint_hub.exp_level"},"range":{"min":{"type":"minecraft:storage","storage":"eden:settings","path":"warping_wonders.waypoint_hub.exp_cost"}}} run return run title @p actionbar {"bold":false,"color":"red","fallback":"Insufficient EXP Level","italic":false,"translate":"msg.eden.general.insufficient_exp"}
+execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:temp","path":"waypoint_hub.exp_level"},"range":{"min":{"type":"minecraft:storage","storage":"eden:settings","path":"warping_wonders.waypoint_hub.exp_cost"}}} run return run title @s actionbar {"bold":false,"color":"red","fallback":"Insufficient EXP Level","italic":false,"translate":"msg.eden.general.insufficient_exp"}
 
 $execute in $(dimension) run forceload add $(x) $(z)
 
