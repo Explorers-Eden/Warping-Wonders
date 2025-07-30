@@ -6,5 +6,6 @@ $data modify storage eden:temp waypoint_tp.teleport.name set from storage eden:d
 $data modify storage eden:temp waypoint_tp.teleport.id set from storage eden:database waypoints.gui.$(gui_id).slot.1.waypoint_id
 data modify storage eden:temp waypoint_tp.teleport.uuid set from entity @p[tag=wawo.waypoint.tp] UUID
 data modify storage eden:temp waypoint_tp.teleport.msg_range set from storage eden:settings warping_wonders.waypoint_hub.min_distance
+data modify storage eden:temp waypoint_tp.teleport.exp_cost set from storage eden:settings warping_wonders.waypoint_hub.exp_cost
 
 execute as @p[tag=wawo.waypoint.tp] run function wawo:waypoint_hub/gui/teleport/check_loc with storage eden:temp waypoint_tp.teleport

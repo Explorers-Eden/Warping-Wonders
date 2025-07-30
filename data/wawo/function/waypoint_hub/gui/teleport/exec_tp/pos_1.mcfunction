@@ -16,4 +16,6 @@ $execute in $(dimension) run forceload remove $(x) $(z)
 data remove storage eden:temp waypoint_tp.teleport
 tag @s remove wawo.waypoint.tp
 
+$experience add @s -$(exp_cost) levels
+
 $tellraw @s [{"bold":false,"color":"dark_purple","italic":false,"text":"▊ "},{"bold":false,"color":"white","italic":false,"text":"Teleported to "},{"bold":false,"color":"white","italic":false,"text":"$(name)"},{"bold":false,"color":"white","italic":false,"text":"."}]

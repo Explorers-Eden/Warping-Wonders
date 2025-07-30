@@ -1,0 +1,3 @@
+## Fixes:
+- Exp cost for teleporting to Waypoint Hubs not being substracted from players
+- Being able to teleport to an invalid Waypoint Hub position
