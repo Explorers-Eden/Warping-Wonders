@@ -14,8 +14,7 @@ $dialog show @s \
         }\
       },\
       "description":{\
-        "translate":"menu.warping_wonders.waypoint_hub.description",\
-        "fallback":"Configure Waypoint Hub Settings:"\
+        "translate":"menu.warping_wonders.waypoint_hub.description"\
       }\
     }\
   ],\
@@ -25,15 +24,13 @@ $dialog show @s \
       "key":"active",\
       "width": 256,\
       "label":{\
-        "translate":"option.warping_wonders.active",\
-        "fallback":"Active"\
+        "translate":"option.warping_wonders.active"\
       },\
       "options":[\
         {\
           "id":"enabled",\
           "display":{\
             "translate":"option.warping_wonders.enabled",\
-            "fallback":"Enabled",\
             "color":"green"\
           }\
         },\
@@ -41,7 +38,6 @@ $dialog show @s \
           "id":"disabled",\
           "display":{\
             "translate":"option.warping_wonders.disabled",\
-            "fallback":"Disabled",\
             "color":"red"\
           },\
           "initial":$(active_initial)\
@@ -53,8 +49,7 @@ $dialog show @s \
       "key":"exp_cost",\
       "width": 256,\
       "label":{\
-        "translate":"option.warping_wonders.exp_cost",\
-        "fallback":"Exp Level Cost"\
+        "translate":"option.warping_wonders.exp_cost"\
       },\
       "start":0,\
       "end":100,\
@@ -66,15 +61,13 @@ $dialog show @s \
       "key":"mob_teleport",\
       "width": 256,\
       "label":{\
-        "translate":"option.warping_wonders.mob_teleport",\
-        "fallback":"Teleport includes leashed Mobs"\
+        "translate":"option.warping_wonders.mob_teleport"\
       },\
       "options":[\
         {\
           "id":"enabled",\
           "display":{\
             "translate":"option.warping_wonders.enabled",\
-            "fallback":"Enabled",\
             "color":"green"\
           }\
         },\
@@ -82,7 +75,6 @@ $dialog show @s \
           "id":"disabled",\
           "display":{\
             "translate":"option.warping_wonders.disabled",\
-            "fallback":"Disabled",\
             "color":"red"\
           },\
           "initial":$(mob_teleport_initial)\
@@ -94,8 +86,7 @@ $dialog show @s \
         "key":"min_distance",\
         "width": 256,\
         "label":{\
-          "translate":"option.warping_wonders.min_distance",\
-          "fallback":"Min Distance between Waypoint Hubs"\
+          "translate":"option.warping_wonders.min_distance"\
         },\
         "start":8,\
         "end":512,\
@@ -107,8 +98,7 @@ $dialog show @s \
         "key":"player_limit",\
         "width": 256,\
         "label":{\
-          "translate":"option.warping_wonders.player_limit",\
-          "fallback":"Max Waypoint Hubs per Player"\
+          "translate":"option.warping_wonders.player_limit"\
         },\
         "start":1,\
         "end":128,\
@@ -123,13 +113,11 @@ $dialog show @s \
     "translate": "items.minecraft.waypoint_hub"\
   },\
   "title": {\
-    "translate": "menu.warping_wonders.waypoint_hub.title",\
-    "fallback": "Warping Wonders: Waypoint Hub Configuration"\
+    "translate": "menu.warping_wonders.waypoint_hub.title"\
   },\
   "yes":{\
     "label":{\
-      "translate":"option.warping_wonders.confirm",\
-      "fallback":"Confirm"\
+      "translate":"option.warping_wonders.confirm"\
     },\
     "action":{\
       "type":"minecraft:dynamic/run_command",\

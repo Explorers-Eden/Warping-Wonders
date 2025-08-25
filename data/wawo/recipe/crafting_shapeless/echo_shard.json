@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      "minecraft:amethyst_shard",
+      "minecraft:lapis_lazuli"
+    ],
+    "result": {
+      "id": "minecraft:echo_shard"
+    }
+  }
+  

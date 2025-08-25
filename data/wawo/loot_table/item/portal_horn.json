@@ -1,0 +1,29 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:goat_horn",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                            "minecraft:item_model": "wawo:portal_horn",
+                            "minecraft:item_name": {"translate":"item.warping_wonders.portal_horn"},
+                            "minecraft:instrument": "wawo:portal_travel_horn",
+                            "minecraft:custom_data": "{wawo:goat_horn_tp}"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

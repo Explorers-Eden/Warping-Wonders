@@ -1,5 +1,7 @@
 {
     "values":[
-      "wawo:load"
+      "wawo:load",
+      "#wawo:scheduled_functions",
+      "wawo:waypoint_hub/database/waypoint_icons/create"
     ]
   }

@@ -1,5 +1,5 @@
 ##default technical scoreboard
-scoreboard objectives add eden.technical dummy
+scoreboard objectives add wawo.technical dummy
 
 ##additional scoreboards
 scoreboard objectives add wawo.inv_slot dummy
@@ -15,7 +15,7 @@ scoreboard objectives add wawo.waypoint_hub.gui.entry_id dummy
 scoreboard objectives add wawo.waypoint_hub.gui.head dummy
 
 ##scoreboard dummy entries
-scoreboard players set $2 eden.technical 2
+scoreboard players set $2 wawo.technical 2
 
 ##wipe data on load
 data remove storage eden:database waypoints.gui
@@ -27,23 +27,5 @@ data remove storage eden:temp compass
 data remove storage eden:temp goat_horn
 data remove storage eden:temp recovery_compass
 
-##init schedules
-schedule function wawo:schedules/1s 1s
-schedule function wawo:schedules/5t 5t
-schedule function wawo:schedules/1t 1t
-
-## ambient sound schedules
-schedule function wawo:waypoint_hub/ambient_sounds/portal 10s
-schedule function wawo:waypoint_hub/ambient_sounds/beacon 2s
-schedule function wawo:waypoint_hub/ambient_sounds/conduit 9s
-
-##create waypoint_icons db
-function wawo:waypoint_hub/database/waypoint_icons/create
-
 ##add initial settings
 execute unless data storage eden:settings warping_wonders run function wawo:default_values
-
-##transfer old waypoints to new storage
-data modify storage eden:database waypoints.hubs set from storage eden:database waypoints.hubs
-data modify storage eden:database waypoints.hubs set from storage eden:database waypoints.gui
-

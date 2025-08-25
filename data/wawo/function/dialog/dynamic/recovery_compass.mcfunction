@@ -13,8 +13,7 @@ $dialog show @s \
         }\
       },\
       "description":{\
-        "translate":"menu.warping_wonders.recovery_compass.description",\
-        "fallback":"Configure Recovery Compass Settings:"\
+        "translate":"menu.warping_wonders.recovery_compass.description"\
       }\
     }\
   ],\
@@ -24,15 +23,13 @@ $dialog show @s \
       "key":"active",\
       "width": 256,\
       "label":{\
-        "translate":"option.warping_wonders.active",\
-        "fallback":"Active"\
+        "translate":"option.warping_wonders.active"\
       },\
       "options":[\
         {\
           "id":"enabled",\
           "display":{\
             "translate":"option.warping_wonders.enabled",\
-            "fallback":"Enabled",\
             "color":"green"\
           }\
         },\
@@ -40,7 +37,6 @@ $dialog show @s \
           "id":"disabled",\
           "display":{\
             "translate":"option.warping_wonders.disabled",\
-            "fallback":"Disabled",\
             "color":"red"\
           },\
           "initial":$(active_initial)\
@@ -52,8 +48,7 @@ $dialog show @s \
       "key":"exp_cost",\
       "width": 256,\
       "label":{\
-        "translate":"option.warping_wonders.exp_cost",\
-        "fallback":"Exp Level Cost"\
+        "translate":"option.warping_wonders.exp_cost"\
       },\
       "start":0,\
       "end":100,\
@@ -65,8 +60,7 @@ $dialog show @s \
       "key":"breaking_chance",\
       "width": 256,\
       "label":{\
-        "translate":"option.warping_wonders.breaking_chance",\
-        "fallback":"Chance of Item breaking"\
+        "translate":"option.warping_wonders.breaking_chance"\
       },\
       "label_format": "options.percent_value",\
       "start":0,\
@@ -79,15 +73,13 @@ $dialog show @s \
       "key":"mob_teleport",\
       "width": 256,\
       "label":{\
-        "translate":"option.warping_wonders.mob_teleport",\
-        "fallback":"Teleport includes leashed Mobs"\
+        "translate":"option.warping_wonders.mob_teleport"\
       },\
       "options":[\
         {\
           "id":"enabled",\
           "display":{\
             "translate":"option.warping_wonders.enabled",\
-            "fallback":"Enabled",\
             "color":"green"\
           }\
         },\
@@ -95,7 +87,6 @@ $dialog show @s \
           "id":"disabled",\
           "display":{\
             "translate":"option.warping_wonders.disabled",\
-            "fallback":"Disabled",\
             "color":"red"\
           },\
           "initial":$(mob_teleport_initial)\
@@ -110,13 +101,11 @@ $dialog show @s \
     "translate": "items.minecraft.recovery_compass"\
   },\
   "title": {\
-    "translate": "menu.warping_wonders.recovery_compass.title",\
-    "fallback": "Warping Wonders: Recovery Compass Configuration"\
+    "translate": "menu.warping_wonders.recovery_compass.title"\
   },\
   "yes":{\
     "label":{\
-      "translate":"option.warping_wonders.confirm",\
-      "fallback":"Confirm"\
+      "translate":"option.warping_wonders.confirm"\
     },\
     "action":{\
       "type":"minecraft:dynamic/run_command",\

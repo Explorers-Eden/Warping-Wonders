@@ -4,25 +4,21 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "translate": "menu.warping_wonders.restore.description",
-        "fallback": "Proceeding will reset all configured values. Do you want to continue?"
+        "translate": "menu.warping_wonders.restore.description"
       },
       "width": 1024
     }
   ],
   "can_close_with_escape": true,
   "external_title": {
-    "translate": "menu.warping_wonders.restore.title",
-    "fallback": "Restore Default Values"
+    "translate": "menu.warping_wonders.restore.title"
   },
   "title": {
-    "translate": "menu.warping_wonders.main.title",
-    "fallback": "Warping Wonders: Admin Configuration"
+    "translate": "menu.warping_wonders.main.title"
   },
   "yes": {
     "label": {
-      "translate": "option.warping_wonders.confirm",
-      "fallback": "Confirm"
+      "translate": "option.warping_wonders.confirm"
     },
     "action": {
       "type": "run_command",
@@ -31,8 +27,7 @@
   },
   "no": {
     "label": {
-      "translate": "option.warping_wonders.back",
-      "fallback": "Back"
+      "translate": "option.warping_wonders.back"
     },
     "action": {
       "type": "show_dialog",

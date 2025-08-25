@@ -11,18 +11,15 @@
       }
     },
     "description": {
-      "translate": "menu.warping_wonders.main.description",
-      "fallback": "Select An Option To Configure:"
+      "translate": "menu.warping_wonders.main.description"
     }
   },
   "can_close_with_escape": true,
   "external_title": {
-    "translate": "menu.warping_wonders.main.title.external",
-    "fallback": "Warping Wonders"
+    "translate": "menu.warping_wonders.main.title.external"
   },
   "title": {
-    "translate": "menu.warping_wonders.main.title",
-    "fallback": "Warping Wonders: Admin Configuration"
+    "translate": "menu.warping_wonders.main.title"
   },
   "pause": false,
   "exit_action": {
@@ -37,8 +34,7 @@
         "translate": "item.minecraft.clock"
       },
       "tooltip": {
-        "translate": "option.warping_wonders.clock.tooltip",
-        "fallback": "Configure settings for teleporting back to a spawnpoint with a Clock."
+        "translate": "option.warping_wonders.clock.tooltip"
       },
       "action": {
         "type": "run_command",
@@ -50,8 +46,7 @@
         "translate": "item.minecraft.compass"
       },
       "tooltip": {
-        "translate": "option.warping_wonders.compass.tooltip",
-        "fallback": "Configure settings for teleporting to a Lodestone with a Compass."
+        "translate": "option.warping_wonders.compass.tooltip"
       },
       "action": {
         "type": "run_command",
@@ -63,8 +58,7 @@
         "translate": "item.minecraft.recovery_compass"
       },
       "tooltip": {
-        "translate": "option.warping_wonders.recovery_compass.tooltip",
-        "fallback": "Configure settings for teleporting back to a players last death location with a Recovery Compass."
+        "translate": "option.warping_wonders.recovery_compass.tooltip"
       },
       "action": {
         "type": "run_command",
@@ -73,12 +67,10 @@
     },
     {
       "label": {
-        "translate": "option.eden.portal_horn",
-        "fallback": "Portal Horn"
+        "translate": "item.warping_wonders.portal_horn"
       },
       "tooltip": {
-        "translate": "option.warping_wonders.portal_horn.tooltip",
-        "fallback": "Configure settings for teleporting to players with Portal Horns."
+        "translate": "option.warping_wonders.portal_horn.tooltip"
       },
       "action": {
         "type": "run_command",
@@ -87,12 +79,10 @@
     },
     {
       "label": {
-        "translate": "option.eden.waypoint_hub",
-        "fallback": "Waypoint Hub"
+        "translate": "item.warping_wonders.waypoint_hub"
       },
       "tooltip": {
-        "translate": "option.warping_wonders.waypoint_hub.tooltip",
-        "fallback": "Configure settings for Waypoint Hubs."
+        "translate": "option.warping_wonders.waypoint_hub.tooltip"
       },
       "action": {
         "type": "run_command",
@@ -102,23 +92,11 @@
     {
       "label": {
         "translate": "option.warping_wonders.restore.title",
-        "fallback": "Restore Default Settings",
         "color": "gray"
       },
       "action": {
         "type": "show_dialog",
         "dialog": "wawo:restore_default"
-      }
-    },
-    {
-       "label": {
-        "translate": "menu.eden.info.title",
-        "fallback": "Explorer's Eden",
-        "color": "gray"
-      },
-      "action": {
-        "type": "show_dialog",
-        "dialog": "wawo:info"
       }
     }
   ]

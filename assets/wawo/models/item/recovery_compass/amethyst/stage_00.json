@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "wawo:item/compass/amethyst_compass_base",
+      "layer1": "wawo:item/compass/sculk_accent/stage_00"
+    }
+  }

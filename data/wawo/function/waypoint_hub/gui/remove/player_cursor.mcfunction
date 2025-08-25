@@ -1,14 +1,16 @@
-execute at @s if items entity @s player.cursor minecraft:player_head[minecraft:custom_data={wawo:waypoint_gui_item},minecraft:custom_name={"bold":false,"fallback":"Previous Page","italic":false,"translate":"gui.eden.waypoint_hub.previous_page"}] run function wawo:waypoint_hub/gui/navigation/prev_page/run
-execute at @s if items entity @s player.cursor minecraft:player_head[minecraft:custom_data={wawo:waypoint_gui_item},minecraft:custom_name={"bold":false,"fallback":"Next Page","italic":false,"translate":"gui.eden.waypoint_hub.next_page"}] run function wawo:waypoint_hub/gui/navigation/next_page/run
+execute at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .5 2
+
+execute at @s if items entity @s player.cursor minecraft:player_head[minecraft:custom_data={wawo:waypoint_gui_item},minecraft:custom_name={"bold":false,"italic":false,"translate":"gui.warping_wonders.waypoint_hub.previous_page"}] run function wawo:waypoint_hub/gui/navigation/prev_page/run
+execute at @s if items entity @s player.cursor minecraft:player_head[minecraft:custom_data={wawo:waypoint_gui_item},minecraft:custom_name={"bold":false,"italic":false,"translate":"gui.warping_wonders.waypoint_hub.next_page"}] run function wawo:waypoint_hub/gui/navigation/next_page/run
 
 execute at @s \
 unless items entity @s player.cursor minecraft:ominous_trial_key[minecraft:custom_data={wawo:waypoint_gui_item}] \
 unless items entity @s player.cursor minecraft:trial_key[minecraft:custom_data={wawo:waypoint_gui_item}] \
 unless items entity @s player.cursor minecraft:bell[minecraft:custom_data={wawo:waypoint_gui_item}] \
 unless items entity @s player.cursor minecraft:barrier[minecraft:custom_data={wawo:waypoint_gui_item}] \
-unless items entity @s player.cursor minecraft:player_head[minecraft:custom_data={wawo:waypoint_gui_item},minecraft:custom_name={"bold":false,"fallback":"Previous Page","italic":false,"translate":"gui.eden.waypoint_hub.previous_page"}] \
-unless items entity @s player.cursor minecraft:player_head[minecraft:custom_data={wawo:waypoint_gui_item},minecraft:custom_name={"bold":false,"fallback":"Next Page","italic":false,"translate":"gui.eden.waypoint_hub.next_page"}] \
-unless items entity @s player.cursor minecraft:player_head[minecraft:custom_data={wawo:waypoint_gui_item},minecraft:custom_name={"bold":false,"fallback":"This Waypoint:","italic":false,"translate":"gui.eden.waypoint_hub.this_waypoint"}] \
+unless items entity @s player.cursor minecraft:player_head[minecraft:custom_data={wawo:waypoint_gui_item},minecraft:custom_name={"bold":false,"italic":false,"translate":"gui.warping_wonders.waypoint_hub.previous_page"}] \
+unless items entity @s player.cursor minecraft:player_head[minecraft:custom_data={wawo:waypoint_gui_item},minecraft:custom_name={"bold":false,"italic":false,"translate":"gui.warping_wonders.waypoint_hub.next_page"}] \
+unless items entity @s player.cursor minecraft:player_head[minecraft:custom_data={wawo:waypoint_gui_item},minecraft:custom_name={"bold":false,"italic":false,"translate":"gui.warping_wonders.waypoint_hub.this_waypoint"}] \
 unless items entity @s player.cursor light_gray_stained_glass_pane \
 run function wawo:waypoint_hub/gui/teleport/run
 
