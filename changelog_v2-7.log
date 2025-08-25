@@ -5,7 +5,7 @@
 - added loot tables for Compasses & Portal Horn
 - reworked lang files to be more coherent - everything is now translatable with lang files
 - added Copper Chest to Waypoint Hub Icons
-- added Lore to Waypoint Hub gui icons for Alert and Access options <-- to-do
+- added Lore to Waypoint Hub gui icons for Alert and Access options
 - Clicking an option in the Waypoint Hub gui has now a sound indicator
 - added variants for Recovery Compasses
 - updated pack icon
