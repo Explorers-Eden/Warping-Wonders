@@ -1,5 +1,7 @@
 advancement revoke @s only wawo:waypoint_icon/right_click
 
+playsound minecraft:entity.player.attack.weak player @s ~ ~ ~
+
 data modify storage eden:temp waypoint.head.player_uuid set from entity @s UUID
 execute as @n[type=marker,tag=wawo.waypoint_hub.marker] store result storage eden:temp waypoint.head.waypoint_id int 1 run scoreboard players get @s wawo.waypoint_hub.id
 
