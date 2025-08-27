@@ -29,3 +29,6 @@ data remove storage eden:temp recovery_compass
 
 ##add initial settings
 execute unless data storage eden:settings warping_wonders run function wawo:default_values
+
+##set data pack version
+data modify storage eden:datapack warping_wonders.version set value "2.8"
