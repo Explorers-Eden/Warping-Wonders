@@ -1,2 +1,0 @@
-execute as @e[type=item_display,tag=wawo.waypoint_hub.icon] at @s unless entity @e[type=interaction,tag=wawo.waypoint.hub.interaction,distance=..1] run summon interaction ~ ~ ~ {width:.5f,height:.5f,response:1b,Tags:["wawo.waypoint.hub.interaction"]}
-execute as @e[type=interaction,tag=wawo.waypoint.hub.interaction] at @s unless entity @e[type=item_display,tag=wawo.waypoint_hub.icon,distance=..1] run kill @s

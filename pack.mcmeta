@@ -1,6 +1,7 @@
 {
 	"pack": {
-		"pack_format": 81,
+		"min_format": 87.1,
+		"max_format": 87.1,
 		"description": [
 			{
 				"text": "Warping Wonders by NiceRon",

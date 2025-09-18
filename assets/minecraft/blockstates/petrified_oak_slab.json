@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraft:block/chest"
+    },
+    "type=double": {
+      "model": "minecraft:block/chest"
+    },
+    "type=top": {
+      "model": "minecraft:block/chest"
+    }
+  }
+}

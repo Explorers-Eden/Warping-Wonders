@@ -1,1 +1,0 @@
-execute as @a run function wawo:compass/remainder_data/replacement_compass

@@ -12,13 +12,13 @@
           ],
           "entity": {
             "type": "minecraft:interaction",
-            "nbt": "{Tags:[\"wawo.waypoint.hub.interaction\"]}"
+            "nbt": "{Tags:[\"wawo.waypoint_hub.interaction\"]}"
           }
         }
       }
     },
     "rewards": {
-      "function": "wawo:waypoint_hub/interaction/left_click/init"
+      "function": "wawo:waypoint_hub/interact/left_click/init"
     }
   }
   

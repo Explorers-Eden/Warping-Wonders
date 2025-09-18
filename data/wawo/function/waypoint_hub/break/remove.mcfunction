@@ -1,10 +1,13 @@
+$data modify storage eden:temp waypoint.remove.name set from storage eden:database waypoints.hubs.$(id).profile.name
+function wawo:waypoint_hub/break/substract_score with storage eden:temp waypoint.remove
+
 $data remove storage eden:database waypoints.hubs.$(id)
-$data remove storage eden:database waypoints.gui.$(id)
 kill @e[type=item_display,tag=wawo.waypoint_hub.display,distance=..2.5]
 kill @e[type=block_display,tag=wawo.waypoint_hub.display,distance=..2.5]
 kill @e[type=text_display,tag=wawo.waypoint_hub.display,distance=..2.5]
+kill @e[type=text_display,tag=wawo.waypoint_hub.display.lock,distance=..2.5]
+kill @e[type=interaction,tag=wawo.waypoint_hub.interaction,distance=..2.5]
 execute at @s if block ~ ~1 ~ light run setblock ~ ~1 ~ air
-kill @e[type=item,nbt={Item:{id:"minecraft:barrel",count:1}},distance=..1]
 
 execute as @s[tag=wawo.waypoint_hub.type.deepslate] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/deepslate
 execute as @s[tag=wawo.waypoint_hub.type.andesite] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/andesite
@@ -83,5 +86,3 @@ tag=!wawo.waypoint_hub.type.warped\
 ] run loot spawn ~ ~ ~ loot wawo:pool/waypoint_hub
 
 kill @s
-
-function wawo:waypoint_hub/database/index/run

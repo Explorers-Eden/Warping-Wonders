@@ -1,9 +1,0 @@
-{
-    "sound_event": "minecraft:block.portal.travel",
-    "description": {
-      "translate": "instrument.warping_wonders.portal_travel.horn"
-    },
-    "range": 256,
-    "use_duration": 20
-  }
-  

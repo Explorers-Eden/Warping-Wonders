@@ -6,6 +6,7 @@
     },
     "rewards": {
       "recipes": [
+        "wawo:crafting_shapeless/waypoint_lock",
         "wawo:crafting_shapeless/compass/amethyst_compass",
         "wawo:crafting_shapeless/compass/copper_compass",
         "wawo:crafting_shapeless/compass/diamond_compass",

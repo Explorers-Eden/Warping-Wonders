@@ -1,2 +1,0 @@
-execute at @e[type=marker,tag=wawo.goat_horn_portal.unnamed.chunk_check] run particle minecraft:portal ~ ~.75 ~ .15 .5 .15 0 50
-execute at @e[type=marker,tag=wawo.goat_horn_portal.named.chunk_check] run particle minecraft:portal ~ ~.75 ~ .15 .5 .15 0 50

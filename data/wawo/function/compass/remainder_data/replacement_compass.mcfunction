@@ -1,3 +1,0 @@
-execute as @s[tag=remainder_compass,gamemode=!creative] at @s run summon item ~ ~ ~ {Item:{id:"minecraft:compass",count:1,components:{"minecraft:custom_data":{temp:data}}}}
-execute as @s[tag=remainder_compass,gamemode=!creative] at @s run data modify entity @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{temp:"data"}}}}] Item.components set from storage eden:temp compass.remainder
-tag @s[tag=remainder_compass] remove remainder_compass

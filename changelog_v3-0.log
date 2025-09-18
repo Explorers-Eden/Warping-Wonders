@@ -1,0 +1,31 @@
+##Dev Note:
+*With v3.0 of Warping Wonders I overhauled many things in the codebase.*
+*Those changes should go mainly unnoticed by players but will increase performance and code stability which makes the data pack more easily maintainable by me.*
+<br>
+*But if you happen to catch a bug, feel free to report it on our discord server (linked on the main page).*
+
+
+## Changes:
+### Waypoint Hub:
+- Waypoint Hub GUI is now utlizing Minecrafts new Dialogs instead of a Barrel Menu
+- Waypoint Hub Menus now only show destinations a player can teleport to (public/own private ones)
+- Default Tool to mine/break a Waypoint Hub is a Pickaxe
+- Left/Right clicking the Icon of a Waypoint Hub (you placed) with a renamed Name Tag still changes the Waypoint's Name
+- Left/Right clicking the Icon of a Waypoint Hub (you placed) with a Dye changes the text color
+- Left/Right clicking the Icon of a Waypoint Hub (you placed) with a Waypoint Lock changes the accessibility of a waypoint (private/public)
+- Left clicking the Icon of a Waypoint Hub (you placed) without a renamed Name Tag cycles available Waypoint Icons
+- Right clicking the Icon of a Waypoint Hub without a renamed Name Tag now opens the new Menu
+- Placing a Wool block below the Waypoint Hub disables the announcement for players teleporting to it
+- Waypoint Hub Items max stack size is now 16
+- Removed outdated lore of Waypoint Hub Items
+- Rarity of Waypoint Hub Items is now common
+
+### Misc:
+- Added Waypoint Lock item (can be crafted with an Iron Ingot & Iron Nugget)
+- Removed assets for old GUI Icons & Waypoint Hub Item Texture
+
+
+## Fixes:
+- Waypoints can't be placed closer than 24 blocks, even when the settings allowed a smaller distance
+- Configured player limit for placing Waypoint Hubs not increasing when placing one
+- Configured player limit for placing Waypoint Hubs not decreasing when breaking one

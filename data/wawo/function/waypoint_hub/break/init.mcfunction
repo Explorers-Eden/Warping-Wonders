@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=wawo.waypoint_hub.marker] at @s unless block ~ ~ ~ minecraft:petrified_oak_slab run function wawo:waypoint_hub/break/exec
