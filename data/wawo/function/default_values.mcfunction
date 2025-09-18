@@ -39,7 +39,6 @@ active_initial: "false",\
 exp_cost:5,\
 breaking_chance:0.0,\
 breaking_chance_initial:0,\
-cooldown:300,\
 mob_teleport:"enabled",\
 mob_teleport_initial:"false",\
 command_template: "function wawo:dialog/command_template/portal_horn {active:$(active),exp_cost:$(exp_cost),breaking_chance:$(breaking_chance),cooldown:$(cooldown),mob_teleport:$(mob_teleport)}"\

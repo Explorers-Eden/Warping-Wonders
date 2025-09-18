@@ -1,5 +1,5 @@
 ##Dev Note:
-*With v3.0 of Warping Wonders I overhauled many things in the codebase.*
+*With v3.0 of Warping Wonders I overhauled many aspects of the codebase.*
 *Those changes should go mainly unnoticed by players but will increase performance and code stability which makes the data pack more easily maintainable by me.*
 <br>
 *But if you happen to catch a bug, feel free to report it on our discord server (linked on the main page).*
@@ -13,12 +13,22 @@
 - Left/Right clicking the Icon of a Waypoint Hub (you placed) with a renamed Name Tag still changes the Waypoint's Name
 - Left/Right clicking the Icon of a Waypoint Hub (you placed) with a Dye changes the text color
 - Left/Right clicking the Icon of a Waypoint Hub (you placed) with a Waypoint Lock changes the accessibility of a waypoint (private/public)
-- Left clicking the Icon of a Waypoint Hub (you placed) without a renamed Name Tag cycles available Waypoint Icons
-- Right clicking the Icon of a Waypoint Hub without a renamed Name Tag now opens the new Menu
+- Left clicking the Icon of a Waypoint Hub (you placed) without a renamed Name Tag, Dye or Waypoint Lock cycles available Waypoint Icons
+- Right clicking the Icon of a Waypoint Hub without a renamed Name Tag, Dye or Waypoint Lock now opens the new Menu
 - Placing a Wool block below the Waypoint Hub disables the announcement for players teleporting to it
 - Waypoint Hub Items max stack size is now 16
 - Removed outdated lore of Waypoint Hub Items
 - Rarity of Waypoint Hub Items is now common
+- Adjusted size of Waypoint Hub blocks to be smaller (1x1x1 instead of 1.1x1.1x1.1)
+
+### Portal Horn:
+- Changed functionalities of Portal Horns:
+    - Portal Horns no longer open a portal other can teleport to by also using a Portal Horn 
+    - Instead when using a Portal Horn, a Dialog opens where players can choose another player to send a teleport request
+    - The recipient of a TPA gets notified by a chat message which includes a prompt for them to accept the request
+- Modified Portal Horn Item in order for it to function properly with the new functions:
+    - Old Horns no longer work for TPA
+    - New Horns can be given with `/loot give @s loot wawo:item/portal_horn`
 
 ### Misc:
 - Added Waypoint Lock item (can be crafted with an Iron Ingot & Iron Nugget)

@@ -93,18 +93,6 @@ $dialog show @s \
           "initial":$(mob_teleport_initial)\
         }\
       ]\
-    },\
-    {\
-      "type":"minecraft:number_range",\
-      "key":"cooldown",\
-      "width": 256,\
-      "label":{\
-        "translate":"option.warping_wonders.cooldown"\
-      },\
-      "start":20,\
-      "end":3600,\
-      "step":10,\
-      "initial":$(cooldown)\
     }\
   ],\
   "can_close_with_escape":true,\

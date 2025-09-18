@@ -15,6 +15,7 @@
 "menu.warping_wonders.portal_horn.title": "Warping Wonders: Portal Horn Configuration",
 "menu.warping_wonders.waypoint_hub.title": "Warping Wonders: Waypoint Hub Configuration",
 "menu.warping_wonders.waypoint_hub.main.description": "Choose a Waypoint to teleport to, or press ESC to exit this menu.",
+"menu.warping_wonders.portal_horn.main.description": "Choose a Player to send a teleport request to, or press ESC to exit this menu.",
 
 "option.warping_wonders.player_limit": "Max Waypoint Hubs per Player",
 "option.warping_wonders.min_distance": "Min Distance between Waypoint Hubs",
@@ -75,8 +76,6 @@
 "item.warping_wonders.warped_waypoint_hub": "Warped Waypoint Hub",
 "item.warping_wonders.waypoint_lock": "Waypoint Lock",
 
-"instrument.warping_wonders.portal_travel.horn": "Portal Travel",
-
 "gui.warping_wonders.waypoint_hub.previous_page": "Previous Page",
 "gui.warping_wonders.waypoint_hub.next_page": "Next Page",
 "gui.warping_wonders.waypoint_hub.owner": "Owner: ",
@@ -99,5 +98,8 @@
 "message.warping_wonders.waypoint_hub.teleport_to": "Teleported to ",
 "message.warping_wonders.waypoint_hub.no_access": "You have no access to teleport there.",
 "message.warping_wonders.waypoint_hub.visitor": "A Visitor teleported to your Waypoint.",
-"message.warping_wonders.default_settings": "Default settings for Warping Wonders applied."
+"message.warping_wonders.default_settings": "Default settings for Warping Wonders applied.",
+"message.warping_wonders.portal_horn.request": "send you a teleport request.",
+"message.warping_wonders.portal_horn.prompt": "[Click to accept]",
+"message.warping_wonders.portal_horn.request_send": "has received your teleport request."
 }

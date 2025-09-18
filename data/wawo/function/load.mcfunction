@@ -6,6 +6,9 @@ scoreboard objectives add wawo.waypoint_hub.menu.teleport trigger {"bold":false,
 scoreboard objectives add wawo.waypoint_hub.id dummy
 scoreboard objectives add wawo.waypoint_hub.head dummy
 scoreboard objectives add wawo.waypoint_hub.player.limit dummy
+scoreboard objectives add wawo.portal_horn.teleport.send trigger {"bold":false,"color":"dark_purple","italic":false,"text":"Portal Horn: Teleport Request Send"}
+scoreboard objectives add wawo.portal_horn.teleport.accept trigger {"bold":false,"color":"dark_purple","italic":false,"text":"Portal Horn: Teleport Request Accepted"}
+scoreboard objectives add wawo.portal_horn.player.id dummy
 
 ##add initial settings
 execute unless data storage eden:settings warping_wonders run function wawo:default_values
