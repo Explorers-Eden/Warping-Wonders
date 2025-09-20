@@ -1,5 +1,7 @@
 $data modify storage eden:database portal_horn.$(id).name set from storage eden:temp portal_horn.name
 $data modify storage eden:database portal_horn.$(id).uuid set from storage eden:temp portal_horn.uuid
+
+data remove storage eden:database portal_horn.actions
 $data modify storage eden:database portal_horn.actions append value \
 {\
       "label": "$(name)",\

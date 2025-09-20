@@ -10,6 +10,9 @@ scoreboard objectives add wawo.portal_horn.teleport.send trigger {"bold":false,"
 scoreboard objectives add wawo.portal_horn.teleport.accept trigger {"bold":false,"color":"dark_purple","italic":false,"text":"Portal Horn: Teleport Request Accepted"}
 scoreboard objectives add wawo.portal_horn.player.id dummy
 
+##scoreboard dummy entries
+scoreboard players set $2 wawo.technical 2
+
 ##add initial settings
 execute unless data storage eden:settings warping_wonders run function wawo:default_values
 

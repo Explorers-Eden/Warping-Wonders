@@ -1,1 +1,1 @@
-execute as @a at @s unless score @s wawo.portal_horn.player.id matches 1.. run function wawo:database/portal_horn/exec
+execute as @a at @s run function wawo:database/portal_horn/exec

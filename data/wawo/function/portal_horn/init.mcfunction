@@ -1,5 +1,5 @@
 advancement revoke @s only wawo:used_portal_horn
-playsound minecraft:block.portal.travel player @a ~ ~ ~ 0.5 1.5
+playsound wawo:warping_wonders.instrument.portal_horn player @a ~ ~ ~ 0.5 1.25
 execute as @s[gamemode=!creative] unless predicate {"condition":"minecraft:random_chance","chance":{"type":"minecraft:storage","storage":"eden:settings","path":"warping_wonders.portal_horn.breaking_chance"}} run loot give @s loot wawo:item/portal_horn
 
 execute unless data storage eden:settings warping_wonders.portal_horn{active:"enabled"} run return fail

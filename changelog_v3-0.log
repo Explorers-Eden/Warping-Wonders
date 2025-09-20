@@ -10,6 +10,7 @@
 - Waypoint Hub GUI is now utlizing Minecrafts new Dialogs instead of a Barrel Menu
 - Waypoint Hub Menus now only show destinations a player can teleport to (public/own private ones)
 - Default Tool to mine/break a Waypoint Hub is a Pickaxe
+- Private Waypoints now display a Lock above the Waypoint Name
 - Left/Right clicking the Icon of a Waypoint Hub (you placed) with a renamed Name Tag still changes the Waypoint's Name
 - Left/Right clicking the Icon of a Waypoint Hub (you placed) with a Dye changes the text color
 - Left/Right clicking the Icon of a Waypoint Hub (you placed) with a Waypoint Lock changes the accessibility of a waypoint (private/public)
@@ -22,6 +23,7 @@
 - Adjusted size of Waypoint Hub blocks to be smaller (1x1x1 instead of 1.1x1.1x1.1)
 
 ### Portal Horn:
+- Changed Portal Horn sound
 - Changed functionalities of Portal Horns:
     - Portal Horns no longer open a portal other can teleport to by also using a Portal Horn 
     - Instead when using a Portal Horn, a Dialog opens where players can choose another player to send a teleport request
@@ -33,9 +35,13 @@
 ### Misc:
 - Added Waypoint Lock item (can be crafted with an Iron Ingot & Iron Nugget)
 - Removed assets for old GUI Icons & Waypoint Hub Item Texture
+- Compasses linked to a Lodestone now get their components removed when the Lodestone is being removed
+- Linked Compasses, Recovery Compasses & Clocks now assign the data related to their features more properly
+- Linked Compasses, REcovery Compasses & Clocks no longer change in rarity
 
 
 ## Fixes:
 - Waypoints can't be placed closer than 24 blocks, even when the settings allowed a smaller distance
 - Configured player limit for placing Waypoint Hubs not increasing when placing one
 - Configured player limit for placing Waypoint Hubs not decreasing when breaking one
+- Compass teleport not giving an Action Bar message when player has not enough exp levels

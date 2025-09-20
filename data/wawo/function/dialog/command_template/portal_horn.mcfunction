@@ -1,6 +1,4 @@
-$data modify storage eden:settings warping_wonders.portal_horn merge value {active:$(active),exp_cost:$(exp_cost),mob_teleport:$(mob_teleport),cooldown:$(cooldown)}
-
-$scoreboard players set $cooldown wawo.goat_horn.timer $(cooldown)
+$data modify storage eden:settings warping_wonders.portal_horn merge value {active:$(active),exp_cost:$(exp_cost),mob_teleport:$(mob_teleport)}
 
 $data modify storage eden:settings warping_wonders.portal_horn.breaking_chance_initial set value $(breaking_chance)
 execute store result storage eden:settings warping_wonders.portal_horn.breaking_chance float 0.01 run data get storage eden:settings warping_wonders.portal_horn.breaking_chance_initial

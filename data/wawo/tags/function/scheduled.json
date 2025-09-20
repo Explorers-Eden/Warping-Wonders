@@ -6,6 +6,9 @@
     "wawo:waypoint_hub/properties/announcement/init",
     "wawo:waypoint_hub/properties/teleport/init",
     "wawo:portal_horn/send/init",
-    "wawo:portal_horn/accept/init"
+    "wawo:portal_horn/accept/init",
+    "wawo:compass/modify/init",
+    "wawo:recovery_compass/modify/init",
+    "wawo:clock/modify/init"
   ]
 }

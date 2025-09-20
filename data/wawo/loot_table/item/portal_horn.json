@@ -28,7 +28,7 @@
                 "minecraft:consumable": {
                   "consume_seconds": 0.5,
                   "animation": "toot_horn",
-                  "sound": "minecraft:entity.enderman.ambient",
+                  "sound": "minecraft:entity.player.breath",
                   "has_consume_particles": false
                 },
                 "minecraft:use_cooldown": {
