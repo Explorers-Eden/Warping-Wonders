@@ -37,7 +37,7 @@
 - Removed assets for old GUI Icons & Waypoint Hub Item Texture
 - Compasses linked to a Lodestone now get their components removed when the Lodestone is being removed
 - Linked Compasses, Recovery Compasses & Clocks now assign the data related to their features more properly
-- Linked Compasses, REcovery Compasses & Clocks no longer change in rarity
+- Linked Compasses, Recovery Compasses & Clocks no longer change in rarity
 
 
 ## Fixes:
