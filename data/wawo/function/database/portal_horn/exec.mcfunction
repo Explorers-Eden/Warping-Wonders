@@ -4,8 +4,8 @@ execute store result storage eden:temp portal_horn.id int 1 run scoreboard playe
 
 loot spawn ~ ~ ~ loot {"type":"minecraft:entity","pools":[{"rolls": 1,"entries":[{"type": "minecraft:item","name": "minecraft:player_head","functions":[{"function": "minecraft:fill_player_head","entity": "this"}]}]}]}
 
-data modify storage eden:temp portal_horn.name set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..8] Item.components.minecraft:profile.name
-data modify storage eden:temp portal_horn.uuid set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..8] Item.components.minecraft:profile.id
+data modify storage eden:temp portal_horn.name set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..4] Item.components.minecraft:profile.name
+data modify storage eden:temp portal_horn.uuid set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..4] Item.components.minecraft:profile.id
 
 kill @n[type=item,nbt={Item:{id:"minecraft:player_head"}}]
 function wawo:database/portal_horn/store_data with storage eden:temp portal_horn

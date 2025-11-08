@@ -41,7 +41,7 @@ breaking_chance:0.0,\
 breaking_chance_initial:0,\
 mob_teleport:"enabled",\
 mob_teleport_initial:"false",\
-command_template: "function wawo:dialog/command_template/portal_horn {active:$(active),exp_cost:$(exp_cost),breaking_chance:$(breaking_chance),cooldown:$(cooldown),mob_teleport:$(mob_teleport)}"\
+command_template: "function wawo:dialog/command_template/portal_horn {active:$(active),exp_cost:$(exp_cost),breaking_chance:$(breaking_chance),mob_teleport:$(mob_teleport)}"\
 }\
 
 scoreboard players set $cooldown wawo.goat_horn.timer 300
