@@ -2,10 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    [
-      "minecraft:iron_ingot",
-      "minecraft:iron_nugget"
-    ]
+    "minecraft:iron_ingot",
+    "minecraft:iron_nugget"
   ],
   "result": {
     "id": "minecraft:music_disc_5",
