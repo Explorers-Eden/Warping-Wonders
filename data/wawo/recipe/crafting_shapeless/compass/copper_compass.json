@@ -3,10 +3,8 @@
   "group": "compass",
   "category": "equipment",
   "ingredients": [
-    [
-      "minecraft:compass",
-      "minecraft:copper_ingot"
-    ]
+    "minecraft:compass",
+    "minecraft:copper_ingot"
   ],
   "result": {
     "components": {

@@ -3,10 +3,8 @@
   "group": "recovery_compass",
   "category": "equipment",
   "ingredients": [
-    [
-      "minecraft:recovery_compass",
-      "minecraft:resin_clump"
-    ]
+    "minecraft:recovery_compass",
+    "minecraft:resin_clump"
   ],
   "result": {
     "components": {

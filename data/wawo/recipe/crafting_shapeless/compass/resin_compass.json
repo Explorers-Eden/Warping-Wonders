@@ -3,10 +3,8 @@
   "group": "compass",
   "category": "equipment",
   "ingredients": [
-    [
-      "minecraft:compass",
-      "minecraft:resin_clump"
-    ]
+    "minecraft:compass",
+    "minecraft:resin_clump"
   ],
   "result": {
     "components": {

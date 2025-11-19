@@ -3,10 +3,8 @@
   "group": "recovery_compass",
   "category": "equipment",
   "ingredients": [
-    [
-      "minecraft:recovery_compass",
-      "minecraft:lapis_lazuli"
-    ]
+    "minecraft:recovery_compass",
+    "minecraft:lapis_lazuli"
   ],
   "result": {
     "components": {

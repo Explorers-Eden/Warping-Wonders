@@ -3,10 +3,8 @@
   "group": "compass",
   "category": "equipment",
   "ingredients": [
-    [
-      "minecraft:compass",
-      "minecraft:amethyst_shard"
-    ]
+    "minecraft:compass",
+    "minecraft:amethyst_shard"
   ],
   "result": {
     "components": {

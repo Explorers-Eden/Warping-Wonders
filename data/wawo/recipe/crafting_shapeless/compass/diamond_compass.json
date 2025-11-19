@@ -3,10 +3,8 @@
   "group": "compass",
   "category": "equipment",
   "ingredients": [
-    [
-      "minecraft:compass",
-      "minecraft:diamond"
-    ]
+    "minecraft:compass",
+    "minecraft:diamond"
   ],
   "result": {
     "components": {
