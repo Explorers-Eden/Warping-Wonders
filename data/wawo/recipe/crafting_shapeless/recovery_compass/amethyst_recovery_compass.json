@@ -3,10 +3,8 @@
   "group": "recovery_compass",
   "category": "equipment",
   "ingredients": [
-    [
-      "minecraft:recovery_compass",
-      "minecraft:amethyst_shard"
-    ]
+    "minecraft:recovery_compass",
+    "minecraft:amethyst_shard"
   ],
   "result": {
     "components": {

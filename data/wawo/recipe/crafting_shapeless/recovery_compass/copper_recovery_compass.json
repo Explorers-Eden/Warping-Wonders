@@ -3,10 +3,8 @@
   "group": "recovery_compass",
   "category": "equipment",
   "ingredients": [
-    [
-      "minecraft:recovery_compass",
-      "minecraft:copper_ingot"
-    ]
+    "minecraft:recovery_compass",
+    "minecraft:copper_ingot"
   ],
   "result": {
     "components": {
