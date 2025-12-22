@@ -17,4 +17,4 @@ scoreboard players set $2 wawo.technical 2
 execute unless data storage eden:settings warping_wonders run function wawo:default_values
 
 ##set data pack version
-data modify storage eden:datapack warping_wonders.version set value "3.1"
+data modify storage eden:datapack warping_wonders.version set value "3.2"
