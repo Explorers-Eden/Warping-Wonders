@@ -14,8 +14,8 @@
 "menu.warping_wonders.recovery_compass.title": "Warping Wonders: Recovery Compass Configuration",
 "menu.warping_wonders.portal_horn.title": "Warping Wonders: Portal Horn Configuration",
 "menu.warping_wonders.waypoint_hub.title": "Warping Wonders: Waypoint Hub Configuration",
-"menu.warping_wonders.waypoint_hub.main.description": "Choose a Waypoint to teleport to, or press ESC to exit this menu.",
-"menu.warping_wonders.portal_horn.main.description": "Choose a Player to send a teleport request to, or press ESC to exit this menu.",
+"menu.warping_wonders.waypoint_hub.main.description": "Available Waypoint Hubs:",
+"menu.warping_wonders.portal_horn.main.description": "Select a Player to send a teleport request to:",
 
 "option.warping_wonders.player_limit": "Max Waypoint Hubs per Player",
 "option.warping_wonders.min_distance": "Min Distance between Waypoint Hubs",

@@ -8,13 +8,17 @@ $dialog show @s \
     "type": "minecraft:plain_message",\
     "contents": {\
       "translate": "menu.warping_wonders.portal_horn.main.description",\
-      "italic": true\
-    },\
-    "width": 1024\
+      "italic": false\
+    }\
   },\
   "can_close_with_escape": true,\
   "pause": false,\
   "after_action": "close",\
+  "exit_action": {\
+    "label": {\
+      "translate": "mco.selectServer.close"\
+    }\
+  },\
   "columns": 3,\
   "actions": $(actions)\
 }

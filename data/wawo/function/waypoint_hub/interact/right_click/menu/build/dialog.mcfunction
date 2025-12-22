@@ -38,21 +38,25 @@ $dialog show @p[tag=wawo.opened_waypoint,distance=..16] \
         "ID: ",\
         "$(home_id)"\
       ],\
-      "width": 1024\
+      "width": 512\
     },\
     {\
       "type": "minecraft:plain_message",\
       "contents": {\
         "translate": "menu.warping_wonders.waypoint_hub.main.description",\
         "color": "white",\
-        "italic": true\
-      },\
-      "width": 1024\
+        "italic": false\
+      }\
     }\
   ],\
   "can_close_with_escape": true,\
   "pause": false,\
   "after_action": "close",\
+  "exit_action": {\
+    "label": {\
+      "translate": "mco.selectServer.close"\
+    }\
+  },\
   "external_title": {\
     "text": "$(home_waypoint_name)",\
     "color": "$(home_color)"\

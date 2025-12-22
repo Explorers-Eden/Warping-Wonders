@@ -1,3 +1,5 @@
+execute if data storage eden:datapack realmrecrafted unless predicate wawo:location/valid_for_waypoint run return run function wawo:waypoint_hub/place/eden_invalid
+
 $execute if entity @e[type=marker,tag=wawo.waypoint_hub.marker,distance=..$(min_distance)] run return run function wawo:waypoint_hub/place/invalid_position
 execute unless data storage eden:settings warping_wonders.waypoint_hub{active:"enabled"} run return run function wawo:waypoint_hub/place/feature_disabled
 
