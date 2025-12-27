@@ -3,7 +3,7 @@
 
 ## Fixes:
 - Menus being not aligned properly in certain cases
-
+- forceloaded chunks not being removed properly after teleporting to a waypoint hub
 
 
 

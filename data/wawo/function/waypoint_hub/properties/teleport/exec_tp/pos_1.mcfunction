@@ -8,7 +8,8 @@ $execute at @s if predicate wawo:entity/is_riding in $(dimension) positioned $(x
 execute at @s run playsound minecraft:entity.enderman.teleport neutral @a ~ ~ ~ .5 0.5
 particle minecraft:reverse_portal ~ ~.5 ~ .3 .7 .3 0 100
 
-data remove storage eden:temp waypoint.teleport
-
 $experience add @s -$(exp_cost) levels
 $tellraw @s [{"bold":false,"color":"dark_purple","italic":false,"text":"▊ "},{"bold":false,"color":"white","italic":false,"translate":"message.warping_wonders.waypoint_hub.teleport_to"},{"bold":false,"color":"white","italic":false,"text":"$(name)"},{"bold":false,"color":"white","italic":false,"text":"."}]
+
+$execute in $(dimension) positioned $(x) $(y) $(z) run forceload remove ~ ~
+data remove storage eden:temp waypoint.teleport
