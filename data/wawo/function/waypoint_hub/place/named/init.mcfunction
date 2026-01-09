@@ -3,7 +3,7 @@ data modify storage eden:temp waypoint.profile merge value {properties:[{name:"t
 execute as @p run loot spawn ~ ~ ~ loot {"type":"minecraft:entity","pools":[{"rolls": 1,"entries":[{"type": "minecraft:item","name": "minecraft:player_head","functions":[{"function": "minecraft:fill_player_head","entity": "this"}]}]}]}
 data modify storage eden:temp waypoint.profile_name set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..8] Item.components.minecraft:profile.name
 data modify storage eden:temp waypoint.profile set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..8] Item.components.minecraft:profile
-kill @n[type=item,nbt={Item:{id:"minecraft:player_head"}}]
+kill @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..8]
 
 function wawo:waypoint_hub/place/named/exec with storage eden:temp waypoint
 

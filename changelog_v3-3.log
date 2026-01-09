@@ -1,0 +1,5 @@
+## Changes:
+- Waypoint Hubs now require an Ender Pearl instead of an Ender Eye for crafting
+
+## Fixes:
+- Basalt Waypoint Hub having a missing texture at the bottom

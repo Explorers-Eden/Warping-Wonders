@@ -3,8 +3,8 @@
 	"textures": {
 		"2": "wawo:block/basalt_waypoint_top",
 		"3": "wawo:block/basalt_waypoint_side",
-		"8": "minecraft:block/polished_basalt",
-		"particle": "minecraft:block/polished_basalt"
+		"8": "minecraft:block/polished_basalt_top",
+		"particle": "minecraft:block/polished_basalt_top"
 	},
 	"elements": [
 		{
