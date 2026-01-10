@@ -1,5 +1,6 @@
 {
   "values": [
+    "minecraft:cave_air",
     "#minecraft:candles",
     "#minecraft:trapdoors",
     "#minecraft:underwater_bonemeals",
