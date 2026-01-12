@@ -1,0 +1,7 @@
+## Changes:
+- Waypoint Hub lore in menu now also shows the Head of the Owner next to the Name
+- Players can now add a description to the lore of Waypoint Hubs shown in menus by left/right clicking a Waypoint Hub with a renamed Paper in their Mainhand
+- Only owners of Waypoint hubs now get a message when someone teleported to their Waypoint. This message is now shown regardless of distance and contains the playername of the player teleported
+- Waypoint Hub teleport messages now show the color of the Waypoint Hub name
+
+## Fixes:

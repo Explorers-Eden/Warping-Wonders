@@ -11,6 +11,7 @@ $data modify storage eden:temp waypoint_hub.menu.waypoint_menu append value \
       },\
       "tooltip": [\
         [\
+          "$(waypoint_description)",\
           {\
             "text": "X: ",\
             "color": "dark_gray"\
@@ -47,6 +48,13 @@ $data modify storage eden:temp waypoint_hub.menu.waypoint_menu append value \
           {\
             "translate": "gui.warping_wonders.waypoint_hub.owner"\
           },\
+          {\
+          "player": {\
+            "name": "$(owner)"\
+          },\
+          "color": "white"\
+          },\
+          " ",\
           {\
             "text": "$(owner)",\
             "color": "white"\

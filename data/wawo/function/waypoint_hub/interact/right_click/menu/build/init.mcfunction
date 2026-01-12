@@ -13,6 +13,9 @@ $data modify storage eden:temp waypoint_hub.menu.uuid set from storage eden:data
 $data modify storage eden:temp waypoint_hub.menu.access set from storage eden:database waypoints.hubs.$(waypoint_id).access
 $data modify storage eden:temp waypoint_hub.menu.id set value $(waypoint_id)
 
+$execute if data storage eden:database waypoints.hubs.$(waypoint_id).waypoint_description run data modify storage eden:temp waypoint_hub.menu.waypoint_description set from storage eden:database waypoints.hubs.$(waypoint_id).waypoint_description
+$execute unless data storage eden:database waypoints.hubs.$(waypoint_id).waypoint_description run data modify storage eden:temp waypoint_hub.menu.waypoint_description set value ""
+
 $execute unless data storage eden:database waypoints.hubs.$(waypoint_id).color run data modify storage eden:database waypoints.hubs.$(waypoint_id).color set value "#ffffff"
 $data modify storage eden:temp waypoint_hub.menu.color set from storage eden:database waypoints.hubs.$(waypoint_id).color
 
