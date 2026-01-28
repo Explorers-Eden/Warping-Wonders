@@ -8,6 +8,7 @@ execute as @e[type=minecraft:interaction,tag=wawo.waypoint_hub.interaction,dista
 execute if items entity @s weapon.mainhand minecraft:music_disc_5[minecraft:custom_data={warping_wonders:{item:"waypoint_lock"}}] run return run function wawo:waypoint_hub/interact/right_click/check_uuid with storage eden:temp waypoint.head
 execute if items entity @s weapon.mainhand #wawo:dyes run return run function wawo:waypoint_hub/interact/right_click/check_uuid with storage eden:temp waypoint.head
 execute if items entity @s weapon.mainhand minecraft:name_tag[minecraft:custom_name] run return run function wawo:waypoint_hub/interact/right_click/check_uuid with storage eden:temp waypoint.head
-execute if items entity @s weapon.mainhand minecraft:paper[minecraft:custom_name] run return run function wawo:waypoint_hub/interact/right_click/check_uuid with storage eden:temp waypoint.head
+execute if items entity @s weapon.mainhand minecraft:book[minecraft:custom_name] run return run function wawo:waypoint_hub/interact/right_click/check_uuid with storage eden:temp waypoint.head
+execute if items entity @s weapon.mainhand minecraft:paper run return run function wawo:waypoint_hub/interact/right_click/check_uuid with storage eden:temp waypoint.head
 
 function wawo:waypoint_hub/interact/right_click/menu/init with storage eden:temp waypoint.head

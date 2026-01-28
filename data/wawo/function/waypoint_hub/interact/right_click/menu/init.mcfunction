@@ -12,5 +12,9 @@ $data modify storage eden:temp waypoint_hub.menu.home_id set value $(waypoint_id
 $execute unless data storage eden:database waypoints.hubs.$(waypoint_id).color run data modify storage eden:database waypoints.hubs.$(waypoint_id).color set value "#ffffff"
 $data modify storage eden:temp waypoint_hub.menu.home_color set from storage eden:database waypoints.hubs.$(waypoint_id).color
 
+execute at @s run loot spawn ~ ~ ~ loot {"type":"minecraft:entity","pools":[{"rolls": 1,"entries":[{"type": "minecraft:item","name": "minecraft:player_head","functions":[{"function": "minecraft:fill_player_head","entity": "this"}]}]}]}
+data modify storage eden:temp waypoint_hub.menu.playername set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..8] Item.components.minecraft:profile.name
+kill @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..8]
+
 execute store result storage eden:temp waypoint_hub.menu.waypoint_id int 1 run scoreboard players set $waypoint_menu_id wawo.technical 1
 execute as @n[type=marker,tag=wawo.waypoint_hub.marker,distance=..16] run function wawo:waypoint_hub/interact/right_click/menu/build/init with storage eden:temp waypoint_hub.menu

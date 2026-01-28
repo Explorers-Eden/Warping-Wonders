@@ -88,6 +88,7 @@
 "gui.warping_wonders.waypoint_hub.toggle_announcement": "Toggle Announcements",
 "gui.warping_wonders.waypoint_hub.menu.title" :"Waypoint Hub: Menu",
 "gui.warping_wonders.waypoint_hub.announcement": "Announcements: ",
+"gui.warping_wonders.waypoint_hub.access_list": "Access List:",
 
 "message.warping_wonders.portal_horn.unnamed": " sounded a Portal Horn!",
 "message.warping_wonders.waypoint.invalid": "Waypoint has no valid position for teleport.",

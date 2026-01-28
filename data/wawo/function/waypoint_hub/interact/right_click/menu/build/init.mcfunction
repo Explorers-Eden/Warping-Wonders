@@ -3,6 +3,10 @@ $execute \
     if score $waypoint_menu_id wawo.technical <= $unique_waypoint_id wawo.waypoint_hub.id \
         run return run function wawo:waypoint_hub/interact/right_click/menu/build/entry/skip
 
+execute \
+    if score @s wawo.waypoint_hub.id = $waypoint_menu_id wawo.technical \
+        run return run function wawo:waypoint_hub/interact/right_click/menu/build/entry/skip
+
 $data modify storage eden:temp waypoint_hub.menu.waypoint_name set from storage eden:database waypoints.hubs.$(waypoint_id).waypoint_name
 $data modify storage eden:temp waypoint_hub.menu.waypoint_x set from storage eden:database waypoints.hubs.$(waypoint_id).pos.x
 $data modify storage eden:temp waypoint_hub.menu.waypoint_y set from storage eden:database waypoints.hubs.$(waypoint_id).pos.y
@@ -13,11 +17,18 @@ $data modify storage eden:temp waypoint_hub.menu.uuid set from storage eden:data
 $data modify storage eden:temp waypoint_hub.menu.access set from storage eden:database waypoints.hubs.$(waypoint_id).access
 $data modify storage eden:temp waypoint_hub.menu.id set value $(waypoint_id)
 
+$data modify storage eden:temp waypoint_hub.menu.icon set from storage eden:database waypoints.hubs.$(waypoint_id).profile.properties[0].value
+$data modify storage eden:temp waypoint_hub.menu.icon set from storage eden:database waypoints.hubs.$(waypoint_id).icon
+
 $execute if data storage eden:database waypoints.hubs.$(waypoint_id).waypoint_description run data modify storage eden:temp waypoint_hub.menu.waypoint_description set from storage eden:database waypoints.hubs.$(waypoint_id).waypoint_description
 $execute unless data storage eden:database waypoints.hubs.$(waypoint_id).waypoint_description run data modify storage eden:temp waypoint_hub.menu.waypoint_description set value ""
 
 $execute unless data storage eden:database waypoints.hubs.$(waypoint_id).color run data modify storage eden:database waypoints.hubs.$(waypoint_id).color set value "#ffffff"
 $data modify storage eden:temp waypoint_hub.menu.color set from storage eden:database waypoints.hubs.$(waypoint_id).color
+
+$execute if data storage eden:database waypoints.hubs.$(waypoint_id){access:"public"} run data modify storage eden:temp waypoint_hub.menu.access_list set value "Public"
+$execute if data storage eden:database waypoints.hubs.$(waypoint_id){access:"private"} unless data storage eden:database waypoints.hubs.$(waypoint_id).trust run data modify storage eden:temp waypoint_hub.menu.access_list set value "Private"
+$execute if data storage eden:database waypoints.hubs.$(waypoint_id){access:"private"} if data storage eden:database waypoints.hubs.$(waypoint_id).trust run data modify storage eden:temp waypoint_hub.menu.access_list set from storage eden:database waypoints.hubs.$(waypoint_id).trust
 
 execute if score $waypoint_menu_id wawo.technical = $unique_waypoint_id wawo.waypoint_hub.id run return run function wawo:waypoint_hub/interact/right_click/menu/build/entry/end with storage eden:temp waypoint_hub.menu
 execute if score $waypoint_menu_id wawo.technical < $unique_waypoint_id wawo.waypoint_hub.id run return run function wawo:waypoint_hub/interact/right_click/menu/build/entry/add with storage eden:temp waypoint_hub.menu

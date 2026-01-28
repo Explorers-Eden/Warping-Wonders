@@ -1,7 +1,15 @@
 ## Changes:
-- Waypoint Hub lore in menu now also shows the Head of the Owner next to the Name
-- Players can now add a description to the lore of Waypoint Hubs shown in menus by left/right clicking a Waypoint Hub with a renamed Paper in their Mainhand
-- Only owners of Waypoint hubs now get a message when someone teleported to their Waypoint. This message is now shown regardless of distance and contains the playername of the player teleported
-- Waypoint Hub teleport messages now show the color of the Waypoint Hub name
+- Waypoint Hub Menu entries now show the selected Head Icon from the block *(shows owners head until Icon was changed for already placed onces)*
+- Added admin tag. Can be used by admins to modify or tp to any waypoint. Can be set with `/tag <playername> add wawo.admin`; will also autmatically be assigned when openening the admin config mennu via `/function warping_wonders`
+- Changed item which is used to add/change Waypoint Lore to Book (was Paper)
+- Waypoint Menus no longer show the current Waypoint in the list
+- Using a renamed Paper on a Waypoint now can grant players permission to teleport to it regardless of it being locked or not:
+    - Text keys to grant permission `trust <playername>` or `Trust <playername>`
+    - Text keys to revoke permission `untrust <playername>` or `Untrust <playername>`
+- Waypoints now show their access status in the Menu:
+    - **Public**: available for everyone
+    - **Private**: only the owner (and admins) can teleport to it
+    - **List of Names**: additional players that can teleport to the Waypoint if it's locked
 
 ## Fixes:
+- Mounts and Pets not being teleported to Waypoints in certain situations

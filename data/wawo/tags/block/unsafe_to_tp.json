@@ -4,6 +4,8 @@
     "minecraft:cobweb",
     "minecraft:powder_snow",
     "minecraft:air",
-    "#minecraft:fire"
+    "#minecraft:fire",
+    "minecraft:vine",
+    "minecraft:ladder"
   ]
 }

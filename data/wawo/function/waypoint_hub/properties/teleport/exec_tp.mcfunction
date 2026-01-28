@@ -11,10 +11,21 @@ $execute unless data storage eden:database waypoints.hubs.$(id).profile{name:"$(
             {"bold":false,"color":"$(color)","italic":false,"text":" $(name)"},\
             {"bold":false,"color":"white","italic":false,"text":"."}\
         ]
-        
-$execute if data storage eden:settings warping_wonders.waypoint_hub{mob_teleport:"enabled"} as @e[nbt={leash: {UUID:$(uuid)}}] in $(dimension) positioned $(x) $(y) $(z) run tp @s ~-1 ~.5 ~
-$execute at @s unless predicate wawo:entity/is_riding in $(dimension) positioned $(x) $(y) $(z) run tp @s ~-1 ~.5 ~
-$execute at @s if predicate wawo:entity/is_riding in $(dimension) positioned $(x) $(y) $(z) run tp @n[type=#wawo:is_mount] ~-1 ~.5 ~
+
+$execute if data storage eden:settings warping_wonders.waypoint_hub{mob_teleport:"enabled"} \
+    as @e[nbt={leash: {UUID:$(uuid)}}] \
+    in $(dimension) positioned $(x) $(y) $(z) \
+        run tp @s $(relative_coords)
+
+$execute if data storage eden:settings warping_wonders.waypoint_hub{mob_teleport:"enabled"} \
+    as @e[type=#nice_actions:is_pet,distance=..24] \
+    if data entity @s {Owner:$(uuid)} \
+    unless data entity @s {Sitting:1b} \
+    in $(dimension) positioned $(x) $(y) $(z) \
+        run tp @s $(relative_coords)
+
+$execute at @s unless predicate wawo:entity/is_riding in $(dimension) positioned $(x) $(y) $(z) run tp @s $(relative_coords)
+$execute at @s if predicate wawo:entity/is_riding in $(dimension) positioned $(x) $(y) $(z) on vehicle run tp @s $(relative_coords)
 
 execute at @s run playsound minecraft:entity.enderman.teleport neutral @a ~ ~ ~ .5 0.5
 particle minecraft:reverse_portal ~ ~.5 ~ .3 .7 .3 0 100
