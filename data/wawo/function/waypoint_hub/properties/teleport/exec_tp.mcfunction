@@ -5,7 +5,7 @@ $execute unless data storage eden:database waypoints.hubs.$(id).profile{name:"$(
 $execute unless data storage eden:database waypoints.hubs.$(id).profile{name:"$(executor)"} \
     if data storage eden:database waypoints.hubs.$(id){announcement:"enabled"} run \
         tellraw $(owner) [\
-            {"bold":false,"color":"dark_purple","italic":false,"text":"▊ "},\
+            {"bold":true,"color":"dark_purple","italic":false,"text":"▊ "},\
             {"bold":false,"color":"white","italic":false,"text":"$(executor) "},\
             {"bold":false,"color":"white","italic":false,"translate":"message.warping_wonders.waypoint_hub.visitor"},\
             {"bold":false,"color":"$(color)","italic":false,"text":" $(name)"},\
@@ -32,7 +32,7 @@ particle minecraft:reverse_portal ~ ~.5 ~ .3 .7 .3 0 100
 
 $experience add @s -$(exp_cost) levels
 $tellraw @s [\
-    {"bold":false,"color":"dark_purple","italic":false,"text":"▊ "},\
+    {"bold":true,"color":"dark_purple","italic":false,"text":"▊ "},\
     {"bold":false,"color":"white","italic":false,"translate":"message.warping_wonders.waypoint_hub.teleport_to"},\
     {"bold":false,"color":"$(color)","italic":false,"text":" $(name)"},\
     {"bold":false,"color":"white","italic":false,"text":"."}\

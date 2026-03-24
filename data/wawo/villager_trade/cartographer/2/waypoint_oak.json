@@ -1,0 +1,54 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": {
+      "type": "minecraft:uniform",
+      "min": 9,
+      "max": 18
+    }
+  },
+  "additional_wants": {
+    "id": "minecraft:oak_planks"
+  },
+  "gives": {
+    "id": "minecraft:armor_stand",
+    "components": {
+                "minecraft:item_model": "wawo:waypoint_hub/oak",
+                "minecraft:max_stack_size": 16,
+                "minecraft:item_name": {"translate":"item.warping_wonders.oak_waypoint_hub"},
+                "minecraft:custom_data": {
+                  "warping_wonders": {
+                    "item": "waypoint_hub"
+                  }
+                },
+                "minecraft:entity_data": {
+                  "id": "minecraft:armor_stand",
+                  "Small": 1,
+                  "Invulnerable": 1,
+                  "Invisible": 1,
+                  "ShowArms": 1,
+                  "Marker": 1,
+                  "NoBasePlate": 1,
+                  "Tags": [
+                    "wawo.waypoint_hub.spawner",
+                    "wawo.waypoint_hub.type.oak"
+                  ]
+                },
+                "minecraft:rarity": "common"
+              },
+    "count": 1
+  },
+  "given_item_modifiers": [],
+  "max_uses": 6,
+  "reputation_discount": 0.05,
+  "xp": 10,
+  "merchant_predicate": {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "components": {
+        "minecraft:villager/variant": "minecraft:plains"
+      }
+    }
+  }
+}
