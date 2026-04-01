@@ -1,0 +1,4 @@
+## Changes:
+- Waypoint Hubs now emit a block update whenever someone teleports to them
+
+## Fixes:
