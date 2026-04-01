@@ -38,7 +38,7 @@ $tellraw @s [\
     {"bold":false,"color":"white","italic":false,"text":"."}\
 ]
 
-$execute in $(dimension) positioned $(x) $(y) $(z) as @n[type=item_display,distance=..6,tag=wawo.waypoint_hub.display] at @s run setblock ~ ~-1 ~ minecraft:petrified_oak_slab[type=bottom]
+$execute in $(dimension) positioned $(x) $(y) $(z) as @n[type=item_display,distance=..6,tag=wawo.waypoint_hub.display] at @s run setblock ~ ~-1 ~ minecraft:petrified_oak_slab[type=top]
 $execute in $(dimension) positioned $(x) $(y) $(z) as @n[type=item_display,distance=..6,tag=wawo.waypoint_hub.display] at @s run setblock ~ ~-1 ~ minecraft:petrified_oak_slab[type=double]
 
 $execute in $(dimension) positioned $(x) $(y) $(z) run forceload remove ~ ~
