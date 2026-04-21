@@ -39,8 +39,8 @@
       "predicate": {
         "position": {
           "x": {
-            "min": -2500,
-            "max": 2500
+            "min": -5000,
+            "max": 5000
           },
           "z": {
             "min": -5000,
