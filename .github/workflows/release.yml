@@ -24,6 +24,82 @@ jobs:
       - name: Install Python dependencies
         run: pip install pyyaml requests
 
+      - name: Create temporary Crowdin config
+        run: |
+          cat > .crowdin-temp.yml <<'EOF'
+          project_id_env: CROWDIN_PROJECT_ID
+          api_token_env: CROWDIN_PERSONAL_TOKEN
+          base_path: .
+          preserve_hierarchy: true
+
+          files:
+            - source: /assets/wawo/lang/en_us.json
+              dest: /Warping Wonders.json
+              translation: /assets/wawo/lang/%locale_with_underscore%.json
+          EOF
+
+      - name: Backup English source lang
+        run: |
+          mkdir -p "$RUNNER_TEMP/crowdin-backup"
+          cp assets/wawo/lang/en_us.json "$RUNNER_TEMP/crowdin-backup/en_us.json"
+
+      - name: Upload source to Crowdin
+        uses: crowdin/github-action@v2
+        with:
+          config: .crowdin-temp.yml
+          upload_sources: true
+          upload_translations: false
+          download_translations: false
+        env:
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+
+      - name: Download translations from Crowdin
+        uses: crowdin/github-action@v2
+        with:
+          config: .crowdin-temp.yml
+          upload_sources: false
+          upload_translations: false
+          download_translations: true
+          skip_untranslated_files: false
+          push_translations: false
+          create_pull_request: false
+        env:
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cleanup Crowdin files and protect en_us
+        run: |
+          rm -f .crowdin-temp.yml
+          rm -f assets/wawo/lang/en_US.json
+          rm -f assets/wawo/lang/en_MY.json
+          cp "$RUNNER_TEMP/crowdin-backup/en_us.json" assets/wawo/lang/en_us.json
+
+      - name: Normalize lang filenames
+        run: |
+          for f in assets/wawo/lang/*.json; do
+            lower=$(echo "$f" | tr 'A-Z' 'a-z')
+            if [ "$f" != "$lower" ]; then
+              mv "$f" "$lower"
+            fi
+          done
+
+      - name: Commit Crowdin translation updates
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add assets/wawo/lang/
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Warping Wonders translations from Crowdin"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          else
+            echo "No translation changes to commit"
+          fi
+
       - name: Read release metadata
         id: meta
         shell: bash
@@ -112,6 +188,7 @@ jobs:
           slug = "warping-wonders"
           description = "Warping Wonders packaged as a universal data/resource mod."
           icon = "warping-wonders_pack.png"
+          namespace = "wawo"
           homepage = f"https://modrinth.com/datapack/{slug}"
           sources = f"https://github.com/Explorers-Eden/{slug}"
 
@@ -119,6 +196,18 @@ jobs:
           missing = [p for p in required if not os.path.exists(p)]
           if missing:
               raise FileNotFoundError(f"Missing required files/folders: {', '.join(missing)}")
+
+          assets_lang = Path("assets") / namespace / "lang"
+          data_lang = Path("data") / namespace / "lang"
+
+          if assets_lang.exists():
+              if data_lang.exists():
+                  shutil.rmtree(data_lang)
+              data_lang.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copytree(assets_lang, data_lang)
+              print(f"Synced {assets_lang} -> {data_lang}")
+          else:
+              print(f"No {assets_lang} found, skipping lang sync")
 
           def add_pack_files(zf):
               for folder in ["assets", "data"]:
@@ -128,6 +217,7 @@ jobs:
                       for file in files:
                           full = os.path.join(root, file)
                           zf.write(full, os.path.relpath(full, "."))
+
               for file in ["LICENSE", "pack.mcmeta", "pack.png"]:
                   zf.write(file, file)
 
