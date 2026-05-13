@@ -1,7 +1,7 @@
 {
     "model": {
       "type": "minecraft:model",
-      "model": "wawo:item/waypoint_hub/cherry"
+      "model": "wawo:block/waypoint_hub/cherry"
     }
   }
   

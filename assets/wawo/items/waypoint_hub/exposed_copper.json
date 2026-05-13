@@ -1,7 +1,7 @@
 {
     "model": {
       "type": "minecraft:model",
-      "model": "wawo:item/waypoint_hub/exposed_copper"
+      "model": "wawo:block/waypoint_hub/exposed_copper"
     }
   }
   
