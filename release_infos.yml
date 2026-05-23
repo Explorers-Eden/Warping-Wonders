@@ -1,7 +1,11 @@
 Project-ID: 8Ti3HhdE
+Mod-ID: mr_warping_wonders
+Namespace: wawo
+Slug: warping-wonders
+Name: Warping Wonders
 
 Meta Data:
-  Versions: 
+  Versions:
     - 26.1
     - 26.1.1
     - 26.1.2

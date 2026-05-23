@@ -33,7 +33,7 @@ with open(file_name, "rb") as f:
         "https://api.modrinth.com/v2/version",
         headers={
             "Authorization": token,
-            "User-Agent": "Explorers-Eden-warping-wonders-GitHub-Action",
+            "User-Agent": "Explorers-Eden-GitHub-Action",
         },
         files={
             "data": (None, json.dumps(payload), "application/json"),

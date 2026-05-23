@@ -8,13 +8,13 @@ zip_name = os.environ["ZIP_NAME"]
 jar_name = os.environ["JAR_NAME"]
 version_number = os.environ["VERSION_NUMBER"]
 project_id = os.environ["PROJECT_ID"]
+mod_id = os.environ["MOD_ID"]
+namespace = os.environ["NAMESPACE"]
+slug = os.environ["SLUG"]
+mod_name = os.environ["NAME"]
+description = os.environ["DESCRIPTION"]
+icon = os.environ["ICON"]
 
-mod_id = "mr_warping_wonders"
-mod_name = "Warping Wonders"
-slug = "warping-wonders"
-description = "Warping Wonders packaged as a universal data/resource mod."
-icon = "warping-wonders_pack.png"
-namespace = "wawo"
 homepage = f"https://modrinth.com/datapack/{slug}"
 sources = f"https://github.com/Explorers-Eden/{slug}"
 
@@ -35,6 +35,7 @@ if assets_lang.exists():
 else:
     print(f"No {assets_lang} found, skipping lang sync")
 
+
 def add_pack_files(zf):
     for folder in ["assets", "data"]:
         if not os.path.exists(folder):
@@ -43,9 +44,9 @@ def add_pack_files(zf):
             for file in files:
                 full = os.path.join(root, file)
                 zf.write(full, os.path.relpath(full, "."))
-
     for file in ["LICENSE", "pack.mcmeta", "pack.png"]:
         zf.write(file, file)
+
 
 with zipfile.ZipFile(zip_name, "w", zipfile.ZIP_DEFLATED) as zf:
     add_pack_files(zf)
@@ -80,7 +81,7 @@ fabric_json = {
     "environment": "*",
     "depends": {
         "fabric-resource-loader-v0": "*"
-    }
+    },
 }
 
 quilt_json = {
@@ -107,11 +108,10 @@ quilt_json = {
                 "unless": "fabric-resource-loader-v0",
             }
         ],
-    }
+    },
 }
 
-forge_toml = f"""
-modLoader = 'lowcodefml'
+forge_toml = f"""modLoader = 'lowcodefml'
 loaderVersion = '[40,)'
 license = 'GPL-3.0-or-later'
 showAsResourcePack = false
@@ -120,8 +120,7 @@ mods = [
 ]
 """
 
-neoforge_toml = f"""
-modLoader = 'javafml'
+neoforge_toml = f"""modLoader = 'javafml'
 loaderVersion = '[1,)'
 license = 'GPL-3.0-or-later'
 showAsResourcePack = false
@@ -132,8 +131,8 @@ mods = [
 
 (build / "fabric.mod.json").write_text(json.dumps(fabric_json, separators=(",", ":")), encoding="utf-8")
 (build / "quilt.mod.json").write_text(json.dumps(quilt_json, separators=(",", ":")), encoding="utf-8")
-(build / "META-INF" / "mods.toml").write_text(forge_toml.strip() + "\n", encoding="utf-8")
-(build / "META-INF" / "neoforge.mods.toml").write_text(neoforge_toml.strip() + "\n", encoding="utf-8")
+(build / "META-INF" / "mods.toml").write_text(forge_toml, encoding="utf-8")
+(build / "META-INF" / "neoforge.mods.toml").write_text(neoforge_toml, encoding="utf-8")
 
 with zipfile.ZipFile(jar_name, "w", zipfile.ZIP_DEFLATED) as zf:
     for root, _, files in os.walk(build):
