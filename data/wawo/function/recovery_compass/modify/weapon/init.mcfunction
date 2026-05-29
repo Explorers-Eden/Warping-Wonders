@@ -1,2 +1,2 @@
-execute if items entity @s weapon.mainhand minecraft:recovery_compass run function wawo:recovery_compass/modify/weapon/exec {slot:"mainhand"}
-execute if items entity @s weapon.offhand minecraft:recovery_compass run function wawo:recovery_compass/modify/weapon/exec {slot:"offhand"}
+execute if items entity @s weapon.mainhand minecraft:recovery_compass run function wawo:recovery_compass/modify/exec {slot:"weapon.mainhand"}
+execute if items entity @s weapon.offhand minecraft:recovery_compass run function wawo:recovery_compass/modify/exec {slot:"weapon.offhand"}

@@ -9,4 +9,4 @@ execute if data storage eden:temp recovery_compass.data{dimension: "minecraft:th
 execute if data storage eden:temp recovery_compass.data{dimension: "wawo:astral_plane"} run data modify storage eden:temp recovery_compass.data.dimension set value "Astral Plane"
 execute if data storage eden:temp recovery_compass.data{dimension: "kattersstructures:deep_blue"} run data modify storage eden:temp recovery_compass.data.dimension set value "Deep Blue"
 
-$item modify entity @s inventory.$(slot) wawo:recovery_compass
+$item modify entity @s $(slot) wawo:recovery_compass

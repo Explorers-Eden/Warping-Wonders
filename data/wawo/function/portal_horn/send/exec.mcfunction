@@ -1,4 +1,5 @@
 execute store result storage eden:temp portal_horn.id int 1 run scoreboard players get @s wawo.portal_horn.teleport.send
+scoreboard players set @s wawo.portal_horn.teleport.send 0
 execute store result storage eden:temp portal_horn.requestor_id int 1 run scoreboard players get @s wawo.portal_horn.player.id
 data modify storage eden:temp portal_horn.exp_cost set from storage eden:settings warping_wonders.portal_horn.exp_cost
 

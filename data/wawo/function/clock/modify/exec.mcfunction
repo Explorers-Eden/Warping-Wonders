@@ -9,4 +9,4 @@ execute if data storage eden:temp clock.data{dimension: "minecraft:the_nether"} 
 execute if data storage eden:temp clock.data{dimension: "wawo:astral_plane"} run data modify storage eden:temp clock.data.dimension set value "Astral Plane"
 execute if data storage eden:temp clock.data{dimension: "kattersstructures:deep_blue"} run data modify storage eden:temp clock.data.dimension set value "Deep Blue"
 
-$item modify entity @s hotbar.$(slot) wawo:clock
+$item modify entity @s $(slot) wawo:clock
