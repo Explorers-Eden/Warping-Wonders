@@ -1,5 +1,10 @@
 # Minecraft Version(s): 26.1.x
 ## Changes:
 - Lang Files are now getting automatically synced with crowdin with new releases
+- Added Totem of Homecoming item:
+    - Can be crafted from 3 Echo Shards and 2 Amethyst Shards
+    - Saves a player from dying much like a Totem of Undying
+    - When previously used on a Waypoint Hub (Access needed) any Totem of Homecoming item will teleport a player to it when the Totem was used
+    - After Teleporting the saved Waypoint Hub will be forgotten
 
 ## Fixes:

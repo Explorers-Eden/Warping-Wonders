@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:used_totem",
+      "conditions": {
+        "item": {
+          "items": "minecraft:music_disc_5",
+          "components": {
+            "minecraft:custom_data": {
+              "warping_wonders": {
+                "item": "totem_of_homecoming"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "wawo:totem_of_homecoming/init"
+  }
+}

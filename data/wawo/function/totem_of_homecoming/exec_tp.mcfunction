@@ -1,0 +1,24 @@
+$execute if data storage eden:settings warping_wonders.waypoint_hub{mob_teleport:"enabled"} \
+    as @e[nbt={leash: {UUID:$(uuid)}}] \
+    in $(dimension) positioned $(x) $(y) $(z) \
+        run tp @s $(relative_coords)
+
+$execute if data storage eden:settings warping_wonders.waypoint_hub{mob_teleport:"enabled"} \
+    as @e[type=#nice_actions:is_pet,distance=..24] \
+    if data entity @s {Owner:$(uuid)} \
+    unless data entity @s {Sitting:1b} \
+    in $(dimension) positioned $(x) $(y) $(z) \
+        run tp @s $(relative_coords)
+
+$execute at @s unless predicate wawo:entity/is_riding in $(dimension) positioned $(x) $(y) $(z) run tp @s $(relative_coords)
+$execute at @s if predicate wawo:entity/is_riding in $(dimension) positioned $(x) $(y) $(z) on vehicle run tp @s $(relative_coords)
+
+execute at @s run playsound minecraft:entity.enderman.teleport neutral @a ~ ~ ~ .5 0.5
+particle minecraft:reverse_portal ~ ~.5 ~ .3 .7 .3 0 100
+
+$execute in $(dimension) positioned $(x) $(y) $(z) as @n[type=item_display,distance=..6,tag=wawo.waypoint_hub.display] at @s run setblock ~ ~-1 ~ minecraft:petrified_oak_slab[type=top]
+$execute in $(dimension) positioned $(x) $(y) $(z) as @n[type=item_display,distance=..6,tag=wawo.waypoint_hub.display] at @s run setblock ~ ~-1 ~ minecraft:petrified_oak_slab[type=double]
+
+$execute in $(dimension) positioned $(x) $(y) $(z) run forceload remove ~ ~
+data remove storage eden:temp waypoint.teleport
+scoreboard players reset @s wawo.totem_of_homecoming.id
