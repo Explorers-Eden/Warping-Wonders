@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "sas",
+    " s "
+  ],
+  "key": {
+    "a": "minecraft:amethyst_shard",
+    "s": "minecraft:echo_shard"
+  },
+  "result": {
+    "id": "minecraft:music_disc_5",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.totem_of_homecoming"
+      },
+      "minecraft:item_model": "wawo:totem_of_homecoming",
+      "minecraft:rarity": "uncommon",
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "totem_of_homecoming"
+        }
+      },
+      "minecraft:death_protection": {
+        "death_effects": [
+          {
+            "type": "minecraft:play_sound",
+            "sound": "minecraft:block.sculk_shrieker.shriek"
+          },
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:regeneration",
+                "amplifier": 2,
+                "duration": 200
+              }
+            ],
+            "probability": 1
+          }
+        ]
+      },
+      "!minecraft:jukebox_playable": {}
+    },
+    "count": 1
+  }
+}
