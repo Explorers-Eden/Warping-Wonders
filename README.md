@@ -1,6 +1,3 @@
-<img src="https://explorerseden.eu/wawo_new.png" alt="header" width=100%>
-<br><br>
-
 ## 📖 Description
 **Warping Wonders** allows for a more immersive player teleportation utilizing already existing items. Using a compass which is linked to a lodestone players can teleport back to the lodestone. A clock teleports players back to their spawnpoint (bed, respawn anchor) and the recovery compass can bring players back to their last death location. The latter two always get consumed when using them. In addition to that Portal Horns can be crafted which function as a TPA replacement. The latest addition to the data pack is a Waypoint Hub system which lets players set up a network of points of interest where they can teleport to. All teleport actions function across all dimensions. Ridden Entites (Camel, Strider, Donkey, Mule, Horse, Llama and Horses) as well as leashed Entities (including Boats) will be teleported alongside players.
 
