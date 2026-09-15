@@ -3,7 +3,10 @@
     "requirement": {
       "trigger": "minecraft:using_item",
       "conditions": {
-        "player": [],
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": []
+        },
         "item": {
           "items": "minecraft:clock"
         }

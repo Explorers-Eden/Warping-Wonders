@@ -37,4 +37,4 @@ execute if items entity @s weapon.mainhand minecraft:red_dye run data modify ent
 execute if items entity @s weapon.mainhand minecraft:white_dye run data modify entity @n[type=text_display,tag=wawo.waypoint_hub.display,distance=..16] text.color set value "#FFFFFF"
 execute if items entity @s weapon.mainhand minecraft:yellow_dye run data modify entity @n[type=text_display,tag=wawo.waypoint_hub.display,distance=..16] text.color set value "#e4e229"
 
-item modify entity @s[gamemode=!creative] weapon.mainhand [{"function": "minecraft:set_count","count": -1,"add": true}]
+item modify entity @s[gamemode=!creative] weapon.mainhand [{"type": "minecraft:set_count","count": -1,"add": true}]

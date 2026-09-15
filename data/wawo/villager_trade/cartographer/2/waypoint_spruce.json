@@ -45,10 +45,10 @@
   "reputation_discount": 0.05,
   "xp": 10,
   "merchant_predicate": {
-    "condition": "minecraft:any_of",
+    "type": "minecraft:any_of",
     "terms": [
       {
-        "condition": "minecraft:entity_properties",
+        "type": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
           "components": {
@@ -57,7 +57,7 @@
         }
       },
       {
-        "condition": "minecraft:entity_properties",
+        "type": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
           "components": {

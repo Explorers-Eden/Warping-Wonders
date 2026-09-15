@@ -12,7 +12,7 @@ $data modify storage eden:temp waypoint_hub.menu.home_id set value $(waypoint_id
 $execute unless data storage eden:database waypoints.hubs.$(waypoint_id).color run data modify storage eden:database waypoints.hubs.$(waypoint_id).color set value "#ffffff"
 $data modify storage eden:temp waypoint_hub.menu.home_color set from storage eden:database waypoints.hubs.$(waypoint_id).color
 
-execute at @s run loot spawn ~ ~ ~ loot {"type":"minecraft:entity","pools":[{"rolls": 1,"entries":[{"type": "minecraft:item","name": "minecraft:player_head","functions":[{"function": "minecraft:fill_player_head","entity": "this"}]}]}]}
+execute at @s run loot spawn ~ ~ ~ loot {"type": "minecraft:command","pools":[{"rolls": 1,"entries":[{"type": "minecraft:item","name": "minecraft:player_head","modifier":[{"type": "minecraft:fill_player_head","entity": "this"}]}]}]}
 data modify storage eden:temp waypoint_hub.menu.playername set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..8] Item.components.minecraft:profile.name
 kill @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..8]
 

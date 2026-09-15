@@ -6,13 +6,13 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_5",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "wawo:portal_horn",
                 "minecraft:item_name": {

@@ -1,10 +1,9 @@
-# Minecraft Version(s): 26.2
+# Minecraft Version(s): 26.3
+## The Wilderness Bound update had lots of small technical changes which added up - so please report any Bugs you catch on our Discord server. 
+## We also moved away from crowdin for our translations and now have our own solution. Feel free to contribute: https://explorerseden.eu/translate/
+## Thank you!
+
 ## Changes:
-- Lang Files are now getting automatically synced with crowdin with new releases
-- Added Totem of Homecoming item:
-    - Can be crafted from 3 Echo Shards and 2 Amethyst Shards
-    - Saves a player from dying much like a Totem of Undying
-    - It teleports a player to the last waypoint hub a player used the item on when dying
-    - After Teleporting the saved Waypoint Hub will be forgotten
+- Updated Safe/Unsafe to TP tag lists for Waypoints
 
 ## Fixes:

@@ -13,29 +13,31 @@
   "gives": {
     "id": "minecraft:armor_stand",
     "components": {
-                "minecraft:item_model": "wawo:waypoint_hub/jungle",
-                "minecraft:max_stack_size": 16,
-                "minecraft:item_name": {"translate":"item.warping_wonders.jungle_waypoint_hub"},
-                "minecraft:custom_data": {
-                  "warping_wonders": {
-                    "item": "waypoint_hub"
-                  }
-                },
-                "minecraft:entity_data": {
-                  "id": "minecraft:armor_stand",
-                  "Small": 1,
-                  "Invulnerable": 1,
-                  "Invisible": 1,
-                  "ShowArms": 1,
-                  "Marker": 1,
-                  "NoBasePlate": 1,
-                  "Tags": [
-                    "wawo.waypoint_hub.spawner",
-                    "wawo.waypoint_hub.type.jungle"
-                  ]
-                },
-                "minecraft:rarity": "common"
-              },
+      "minecraft:item_model": "wawo:waypoint_hub/jungle",
+      "minecraft:max_stack_size": 16,
+      "minecraft:item_name": {
+        "translate": "item.warping_wonders.jungle_waypoint_hub"
+      },
+      "minecraft:custom_data": {
+        "warping_wonders": {
+          "item": "waypoint_hub"
+        }
+      },
+      "minecraft:entity_data": {
+        "id": "minecraft:armor_stand",
+        "Small": 1,
+        "Invulnerable": 1,
+        "Invisible": 1,
+        "ShowArms": 1,
+        "Marker": 1,
+        "NoBasePlate": 1,
+        "Tags": [
+          "wawo.waypoint_hub.spawner",
+          "wawo.waypoint_hub.type.jungle"
+        ]
+      },
+      "minecraft:rarity": "common"
+    },
     "count": 1
   },
   "given_item_modifiers": [],
@@ -43,7 +45,7 @@
   "reputation_discount": 0.05,
   "xp": 10,
   "merchant_predicate": {
-    "condition": "minecraft:entity_properties",
+    "type": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
       "components": {

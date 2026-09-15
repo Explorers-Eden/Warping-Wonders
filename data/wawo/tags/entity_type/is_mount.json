@@ -1,17 +1,17 @@
 {
   "values": [
-    "minecraft:strider",
     "minecraft:camel",
-    "minecraft:horse",
-    "minecraft:zombie_horse",
-    "minecraft:skeleton_horse",
+    "minecraft:camel_husk",
     "minecraft:donkey",
-    "minecraft:mule",
+    "minecraft:horse",
     "minecraft:llama",
-    "minecraft:trader_llama",
-    "minecraft:pig",
+    "minecraft:mule",
     "minecraft:nautilus",
-    "minecraft:zombie_nautilus",
-    "minecraft:camel_husk"
+    "minecraft:pig",
+    "minecraft:skeleton_horse",
+    "minecraft:strider",
+    "minecraft:trader_llama",
+    "minecraft:zombie_horse",
+    "minecraft:zombie_nautilus"
   ]
 }

@@ -1,6 +1,8 @@
-[
+{
+  "type": "minecraft:sequence",
+  "functions": [
     {
-      "function": "minecraft:set_components",
+      "type": "minecraft:set_components",
       "components": {
         "minecraft:consumable": {
           "consume_seconds": 600,
@@ -28,72 +30,72 @@
           "cooldown_group": "wawo:recovery_compass_tp"
         },
         "!minecraft:food": {},
-      "minecraft:rarity": "uncommon"
+        "minecraft:rarity": "uncommon"
       }
     },
-  {
-    "function": "minecraft:set_lore",
-    "entity": "this",
-    "lore": [
-      [
-        {
-          "text": "Dimension: ",
-          "color": "dark_gray",
-          "bold": false,
-          "italic": false
-        },
-        {
-          "nbt": "recovery_compass.data.dimension",
-          "storage": "eden:temp",
-          "color": "gray"
-        }
-      ]
-    ],
-    "mode": "replace_all"
-  },
-  {
-    "function": "minecraft:set_lore",
-    "entity": "this",
-    "lore": [
-      [
+    {
+      "type": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
         [
           {
-            "text": "X: ",
+            "text": "Dimension: ",
             "color": "dark_gray",
             "bold": false,
             "italic": false
           },
           {
-            "nbt": "recovery_compass.data.x",
-            "storage": "eden:temp",
-            "color": "gray"
-          },
-          {
-            "text": " | Y: ",
-            "color": "dark_gray",
-            "bold": false,
-            "italic": false
-          },
-          {
-            "nbt": "recovery_compass.data.y",
-            "storage": "eden:temp",
-            "color": "gray"
-          },
-          {
-            "text": " | Z: ",
-            "color": "dark_gray",
-            "bold": false,
-            "italic": false
-          },
-          {
-            "nbt": "recovery_compass.data.z",
+            "nbt": "recovery_compass.data.dimension",
             "storage": "eden:temp",
             "color": "gray"
           }
         ]
-      ]
-    ],
-    "mode": "insert"
-  }
+      ],
+      "mode": "replace_all"
+    },
+    {
+      "type": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          [
+            {
+              "text": "X: ",
+              "color": "dark_gray",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "nbt": "recovery_compass.data.x",
+              "storage": "eden:temp",
+              "color": "gray"
+            },
+            {
+              "text": " | Y: ",
+              "color": "dark_gray",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "nbt": "recovery_compass.data.y",
+              "storage": "eden:temp",
+              "color": "gray"
+            },
+            {
+              "text": " | Z: ",
+              "color": "dark_gray",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "nbt": "recovery_compass.data.z",
+              "storage": "eden:temp",
+              "color": "gray"
+            }
+          ]
+        ]
+      ],
+      "mode": "insert"
+    }
   ]
-  
+}

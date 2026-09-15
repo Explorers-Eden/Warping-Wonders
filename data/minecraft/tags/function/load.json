@@ -1,7 +1,7 @@
 {
-    "values":[
-      "wawo:load",
-      "#wawo:on_load",
-      "#wawo:scheduled"
-    ]
-  }
+  "values": [
+    "#wawo:on_load",
+    "#wawo:scheduled",
+    "wawo:load"
+  ]
+}

@@ -7,9 +7,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_5",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "item.warping_wonders.totem_of_homecoming"
