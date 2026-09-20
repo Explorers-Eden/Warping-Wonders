@@ -1,9 +1,5 @@
 # Minecraft Version(s): 26.3
-## The Wilderness Bound update had lots of small technical changes which added up - so please report any Bugs you catch on our Discord server. 
-## We also moved away from crowdin for our translations and now have our own solution. Feel free to contribute: https://explorerseden.eu/translate/
-## Thank you!
-
 ## Changes:
-- Updated Safe/Unsafe to TP tag lists for Waypoints
 
 ## Fixes:
+- Waypoint teleportation always returning that there is no valid position
