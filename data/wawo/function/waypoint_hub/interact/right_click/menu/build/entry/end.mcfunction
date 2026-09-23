@@ -54,6 +54,7 @@ $data modify storage eden:temp waypoint_hub.menu.waypoint_menu append value \
           "\n",\
           {\
             "translate": "gui.warping_wonders.waypoint_hub.dimension",\
+            "fallback":"Dimension: ",\
             "color": "dark_gray"\
           },\
           {\
@@ -63,6 +64,7 @@ $data modify storage eden:temp waypoint_hub.menu.waypoint_menu append value \
           "\n\n",\
           {\
             "translate": "gui.warping_wonders.waypoint_hub.access_list",\
+            "fallback":"Access List:",\
             "color": "dark_gray"\
           },\
           {\
@@ -73,6 +75,7 @@ $data modify storage eden:temp waypoint_hub.menu.waypoint_menu append value \
           "\n\n",\
           {\
             "translate": "gui.warping_wonders.waypoint_hub.owner",\
+            "fallback":"Owner: ",\
             "color": "dark_gray"\
           },\
           {\

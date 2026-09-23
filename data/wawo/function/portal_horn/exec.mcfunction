@@ -2,12 +2,14 @@ $dialog show @s \
 {\
   "type": "minecraft:multi_action",\
   "title": {\
-    "translate": "item.warping_wonders.portal_horn"\
+    "translate": "item.warping_wonders.portal_horn",\
+    "fallback":"Portal Horn"\
   },\
   "body": {\
     "type": "minecraft:plain_message",\
     "contents": {\
       "translate": "menu.warping_wonders.portal_horn.main.description",\
+      "fallback":"Select a Player to send a teleport request to:",\
       "italic": false\
     }\
   },\
@@ -16,7 +18,8 @@ $dialog show @s \
   "after_action": "close",\
   "exit_action": {\
     "label": {\
-      "translate": "mco.selectServer.close"\
+      "translate": "option.warping_wonders.close",\
+      "fallback":"Close"\
     }\
   },\
   "columns": 3,\

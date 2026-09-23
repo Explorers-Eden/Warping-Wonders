@@ -6,12 +6,12 @@
       "predicate": {
         "position": {
           "x": {
-            "min": -5000,
-            "max": 5000
+            "min": -6500,
+            "max": 6500
           },
           "z": {
-            "min": -5000,
-            "max": 5000
+            "min": -6500,
+            "max": 6500
           }
         },
         "dimension": "minecraft:overworld"

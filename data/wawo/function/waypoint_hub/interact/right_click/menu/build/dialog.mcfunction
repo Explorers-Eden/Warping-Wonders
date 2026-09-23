@@ -7,6 +7,7 @@ $dialog show @p[tag=wawo.opened_waypoint,distance=..16] \
       "contents": [\
         {\
           "translate": "gui.warping_wonders.waypoint_hub.owner",\
+          "fallback":"Owner: ",\
           "color": "gray"\
         },\
         "$(home_owner)",\
@@ -27,7 +28,8 @@ $dialog show @p[tag=wawo.opened_waypoint,distance=..16] \
           "bold": true\
         },\
         {\
-          "translate": "gui.warping_wonders.waypoint_hub.dimension"\
+          "translate": "gui.warping_wonders.waypoint_hub.dimension",\
+          "fallback":"Dimension: "\
         },\
         "$(home_dimension_name)",\
         {\
@@ -44,6 +46,7 @@ $dialog show @p[tag=wawo.opened_waypoint,distance=..16] \
       "type": "minecraft:plain_message",\
       "contents": {\
         "translate": "menu.warping_wonders.waypoint_hub.main.description",\
+        "fallback":"Available Waypoint Hubs:",\
         "color": "white",\
         "italic": false\
       }\
@@ -54,7 +57,8 @@ $dialog show @p[tag=wawo.opened_waypoint,distance=..16] \
   "after_action": "close",\
   "exit_action": {\
     "label": {\
-      "translate": "mco.selectServer.close"\
+      "translate": "option.warping_wonders.close",\
+      "fallback":"Close"\
     }\
   },\
   "external_title": {\

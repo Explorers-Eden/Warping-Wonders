@@ -24,7 +24,7 @@
   "pause": false,
   "exit_action": {
     "label": {
-      "translate": "mco.selectServer.close"
+      "translate": "option.warping_wonders.close"
     }
   },
   "columns": 1,

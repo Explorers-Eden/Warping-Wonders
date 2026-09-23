@@ -1,4 +1,4 @@
-title @p actionbar {"bold":false,"color":"red","italic":false,"translate":"message.warping_wonders.waypoint_hub.invalid_pos"}
+title @p actionbar {"bold":false,"color":"red","fallback":"Too close to nearest Waypoint","italic":false,"translate":"message.warping_wonders.waypoint_hub.invalid_pos"}
 execute at @p run playsound minecraft:entity.chicken.egg neutral @p ~ ~ ~ .6 2
 
 execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.deepslate] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/deepslate

@@ -14,7 +14,8 @@ $dialog show @s \
         }\
       },\
       "description":{\
-        "translate":"menu.warping_wonders.portal_horn.description"\
+        "translate":"menu.warping_wonders.portal_horn.description",\
+        "fallback":"Configure Portal Horn Settings:"\
       }\
     }\
   ],\
@@ -24,13 +25,15 @@ $dialog show @s \
       "key":"active",\
       "width": 256,\
       "label":{\
-        "translate":"option.warping_wonders.active"\
+        "translate":"option.warping_wonders.active",\
+        "fallback":"Active"\
       },\
       "options":[\
         {\
           "id":"enabled",\
           "display":{\
             "translate":"option.warping_wonders.enabled",\
+            "fallback":"Enabled",\
             "color":"green"\
           }\
         },\
@@ -38,6 +41,7 @@ $dialog show @s \
           "id":"disabled",\
           "display":{\
             "translate":"option.warping_wonders.disabled",\
+            "fallback":"Disabled",\
             "color":"red"\
           },\
           "initial":$(active_initial)\
@@ -49,7 +53,8 @@ $dialog show @s \
       "key":"exp_cost",\
       "width": 256,\
       "label":{\
-        "translate":"option.warping_wonders.exp_cost"\
+        "translate":"option.warping_wonders.exp_cost",\
+        "fallback":"Exp Level Cost"\
       },\
       "start":0,\
       "end":100,\
@@ -61,7 +66,8 @@ $dialog show @s \
       "key":"breaking_chance",\
       "width": 256,\
       "label":{\
-        "translate":"option.warping_wonders.breaking_chance"\
+        "translate":"option.warping_wonders.breaking_chance",\
+        "fallback":"Chance of Item breaking"\
       },\
       "label_format": "options.percent_value",\
       "start":0,\
@@ -74,13 +80,15 @@ $dialog show @s \
       "key":"mob_teleport",\
       "width": 256,\
       "label":{\
-        "translate":"option.warping_wonders.mob_teleport"\
+        "translate":"option.warping_wonders.mob_teleport",\
+        "fallback":"Teleport includes leashed Mobs"\
       },\
       "options":[\
         {\
           "id":"enabled",\
           "display":{\
             "translate":"option.warping_wonders.enabled",\
+            "fallback":"Enabled",\
             "color":"green"\
           }\
         },\
@@ -88,6 +96,7 @@ $dialog show @s \
           "id":"disabled",\
           "display":{\
             "translate":"option.warping_wonders.disabled",\
+            "fallback":"Disabled",\
             "color":"red"\
           },\
           "initial":$(mob_teleport_initial)\
@@ -99,14 +108,17 @@ $dialog show @s \
   "pause":true,\
   "after_action":"close",\
   "external_title": {\
-    "translate": "items.minecraft.portal_horn"\
+    "translate": "item.warping_wonders.portal_horn",\
+    "fallback": "Portal Horn"\
   },\
   "title": {\
-    "translate": "menu.warping_wonders.portal_horn.title"\
+    "translate": "menu.warping_wonders.portal_horn.title",\
+    "fallback":"Warping Wonders: Portal Horn Configuration"\
   },\
   "yes":{\
     "label":{\
-      "translate":"option.warping_wonders.confirm"\
+      "translate":"option.warping_wonders.confirm",\
+      "fallback":"Confirm"\
     },\
     "action":{\
       "type":"minecraft:dynamic/run_command",\
@@ -115,7 +127,8 @@ $dialog show @s \
   },\
   "no":{\
     "label":{\
-      "translate":"gui.back"\
+      "translate":"gui.back",\
+      "fallback":"Back"\
     },\
     "action":{\
       "type":"minecraft:show_dialog",\

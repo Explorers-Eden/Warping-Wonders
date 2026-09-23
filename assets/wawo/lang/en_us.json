@@ -27,6 +27,7 @@
 "option.warping_wonders.disabled": "Disabled",
 "option.warping_wonders.confirm": "Confirm",
 "option.warping_wonders.back": "Back",
+"option.warping_wonders.close": "Close",
 "option.warping_wonders.clock.tooltip": "Configure settings for teleporting back to a spawnpoint with a Clock.",
 "option.warping_wonders.compass.tooltip": "Configure settings for teleporting to a Lodestone with a Compass.",
 "option.warping_wonders.recovery_compass.tooltip": "Configure settings for teleporting back to a players last death location with a Recovery Compass.",

@@ -12,6 +12,6 @@ $execute unless data storage eden:temp waypoint.teleport{valid_pos_found:1b} in 
 execute if data storage eden:temp waypoint.teleport{valid_pos_found:1b} run return run function wawo:waypoint_hub/properties/teleport/exec_tp with storage eden:temp waypoint.teleport
 
 playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .5 2
-tellraw @s [{"bold":false,"color":"dark_purple","italic":false,"text":"▊ "},{"bold":false,"color":"white","italic":false,"translate":"message.warping_wonders.waypoint.invalid"}]
+tellraw @s [{"bold":false,"color":"dark_purple","italic":false,"text":"▊ "},{"bold":false,"color":"white","fallback":"Waypoint has no valid position for teleport.","italic":false,"translate":"message.warping_wonders.waypoint.invalid"}]
 $execute in $(dimension) positioned $(x) $(y) $(z) run forceload remove ~ ~
 data remove storage eden:temp waypoint.teleport

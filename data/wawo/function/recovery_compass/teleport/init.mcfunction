@@ -2,7 +2,7 @@ advancement revoke @s only wawo:used_recovery_compass
 
 execute unless data storage eden:settings warping_wonders.recovery_compass{active:"enabled"} run return fail
 execute store result storage eden:temp recovery_compass.exp_level int 1 run experience query @s levels
-execute unless predicate {"type":"minecraft:int_value_check","value":{"type":"minecraft:storage","storage":"eden:temp","path":"recovery_compass.exp_level"},"test":{"min":{"type":"minecraft:storage","storage":"eden:settings","path":"warping_wonders.recovery_compass.exp_cost"}}} run return run title @s actionbar {"bold":false,"color":"red","italic":false,"translate":"message.warping_wonders.general.insufficient_exp"}
+execute unless predicate {"type":"minecraft:int_value_check","value":{"type":"minecraft:storage","storage":"eden:temp","path":"recovery_compass.exp_level"},"test":{"min":{"type":"minecraft:storage","storage":"eden:settings","path":"warping_wonders.recovery_compass.exp_cost"}}} run return run title @s actionbar {"bold":false,"color":"red","fallback":"Insufficient EXP Level","italic":false,"translate":"message.warping_wonders.general.insufficient_exp"}
 
 data modify storage eden:temp recovery_compass.tp.dimension set from entity @s LastDeathLocation.dimension
 data modify storage eden:temp recovery_compass.tp.x set from entity @s LastDeathLocation.pos[0]
