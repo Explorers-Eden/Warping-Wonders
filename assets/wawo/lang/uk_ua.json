@@ -99,5 +99,6 @@
     "message.warping_wonders.default_settings": "Застосовано налаштування Warping Wonders за замовчуванням.",
     "message.warping_wonders.portal_horn.request": "надіслав(ла) вам запит на телепортацію.",
     "message.warping_wonders.portal_horn.prompt": "[Натисніть, щоб прийняти]",
-    "message.warping_wonders.portal_horn.request_send": "отримав(ла) ваш запит на телепортацію."
+    "message.warping_wonders.portal_horn.request_send": "отримав(ла) ваш запит на телепортацію.",
+    "option.warping_wonders.close": "Close"
 }

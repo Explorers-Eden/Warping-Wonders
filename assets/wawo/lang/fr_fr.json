@@ -99,5 +99,6 @@
     "message.warping_wonders.default_settings": "Paramètres par défaut des Merveilles déformées appliqués.",
     "message.warping_wonders.portal_horn.request": "vous envoyer une demande de téléportation.",
     "message.warping_wonders.portal_horn.prompt": "[Cliquer pour accepter]",
-    "message.warping_wonders.portal_horn.request_send": "a reçu votre demande de téléportation."
+    "message.warping_wonders.portal_horn.request_send": "a reçu votre demande de téléportation.",
+    "option.warping_wonders.close": "Close"
 }

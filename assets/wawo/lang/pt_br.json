@@ -99,5 +99,6 @@
     "message.warping_wonders.default_settings": "Configurações padrão para Warping Wonders aplicadas.",
     "message.warping_wonders.portal_horn.request": "envie uma solicitação de teleporte.",
     "message.warping_wonders.portal_horn.prompt": "[Clique para aceitar]",
-    "message.warping_wonders.portal_horn.request_send": "recebeu sua solicitação de teleporte."
+    "message.warping_wonders.portal_horn.request_send": "recebeu sua solicitação de teleporte.",
+    "option.warping_wonders.close": "Close"
 }

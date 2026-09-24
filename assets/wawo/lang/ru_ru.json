@@ -99,5 +99,6 @@
     "message.warping_wonders.default_settings": "Установлены параметры по умолчанию для Warping Wonders.",
     "message.warping_wonders.portal_horn.request": "отправил вам запрос на телепортацию.",
     "message.warping_wonders.portal_horn.prompt": "[Нажмите, чтобы принять]",
-    "message.warping_wonders.portal_horn.request_send": "получил ваш запрос на телепортацию."
+    "message.warping_wonders.portal_horn.request_send": "получил ваш запрос на телепортацию.",
+    "option.warping_wonders.close": "Close"
 }
