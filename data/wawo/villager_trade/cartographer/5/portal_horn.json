@@ -1,5 +1,5 @@
 {
-  "given_item_modifiers": [],
+  "given_item_modifier": [],
   "gives": {
     "id": "minecraft:music_disc_5",
     "components": {
