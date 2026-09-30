@@ -45,6 +45,17 @@ execute as @s[tag=wawo.waypoint_hub.type.purpur] run loot spawn ~ ~ ~ loot wawo:
 execute as @s[tag=wawo.waypoint_hub.type.quartz] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/quartz
 execute as @s[tag=wawo.waypoint_hub.type.spruce] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/spruce
 execute as @s[tag=wawo.waypoint_hub.type.warped] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/warped
+execute as @s[tag=wawo.waypoint_hub.type.cinnabar] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/cinnabar
+execute as @s[tag=wawo.waypoint_hub.type.diamond] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/diamond
+execute as @s[tag=wawo.waypoint_hub.type.emerald] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/emerald
+execute as @s[tag=wawo.waypoint_hub.type.golden] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/golden
+execute as @s[tag=wawo.waypoint_hub.type.iron] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/iron
+execute as @s[tag=wawo.waypoint_hub.type.lodestone] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/lodestone
+execute as @s[tag=wawo.waypoint_hub.type.netherite] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/netherite
+execute as @s[tag=wawo.waypoint_hub.type.poplar] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/poplar
+execute as @s[tag=wawo.waypoint_hub.type.red_nether_bricks] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/red_nether_bricks
+execute as @s[tag=wawo.waypoint_hub.type.redstone] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/redstone
+execute as @s[tag=wawo.waypoint_hub.type.resin] run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/resin
 
 execute as @s[\
 tag=!wawo.waypoint_hub.type.deepslate,\
@@ -82,7 +93,18 @@ tag=!wawo.waypoint_hub.type.pumpkin,\
 tag=!wawo.waypoint_hub.type.purpur,\
 tag=!wawo.waypoint_hub.type.quartz,\
 tag=!wawo.waypoint_hub.type.spruce,\
-tag=!wawo.waypoint_hub.type.warped\
+tag=!wawo.waypoint_hub.type.warped,\
+tag=!wawo.waypoint_hub.type.cinnabar,\
+tag=!wawo.waypoint_hub.type.diamond,\
+tag=!wawo.waypoint_hub.type.emerald,\
+tag=!wawo.waypoint_hub.type.golden,\
+tag=!wawo.waypoint_hub.type.iron,\
+tag=!wawo.waypoint_hub.type.lodestone,\
+tag=!wawo.waypoint_hub.type.netherite,\
+tag=!wawo.waypoint_hub.type.poplar,\
+tag=!wawo.waypoint_hub.type.red_nether_bricks,\
+tag=!wawo.waypoint_hub.type.redstone,\
+tag=!wawo.waypoint_hub.type.resin\
 ] run loot spawn ~ ~ ~ loot wawo:pool/waypoint_hub
 
 kill @s

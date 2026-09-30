@@ -38,7 +38,7 @@
         "wawo:crafting_shaped/waypoint_hub/copper",
         "wawo:crafting_shaped/waypoint_hub/exposed_copper",
         "wawo:crafting_shaped/waypoint_hub/weathered_copper",
-        "wawo:crafting_shaped/waypoint_hub/oxidizied_copper",
+        "wawo:crafting_shaped/waypoint_hub/oxidized_copper",
         "wawo:crafting_shaped/waypoint_hub/prismarine",
         "wawo:crafting_shaped/waypoint_hub/dark_prismarine",
         "wawo:crafting_shaped/waypoint_hub/acacia",
@@ -61,6 +61,17 @@
         "wawo:crafting_shaped/waypoint_hub/quartz",
         "wawo:crafting_shaped/waypoint_hub/spruce",
         "wawo:crafting_shaped/waypoint_hub/warped",
+        "wawo:crafting_shaped/waypoint_hub/cinnabar",
+        "wawo:crafting_shaped/waypoint_hub/diamond",
+        "wawo:crafting_shaped/waypoint_hub/emerald",
+        "wawo:crafting_shaped/waypoint_hub/golden",
+        "wawo:crafting_shaped/waypoint_hub/iron",
+        "wawo:crafting_shaped/waypoint_hub/lodestone",
+        "wawo:crafting_shaped/waypoint_hub/netherite",
+        "wawo:crafting_shaped/waypoint_hub/poplar",
+        "wawo:crafting_shaped/waypoint_hub/red_nether_bricks",
+        "wawo:crafting_shaped/waypoint_hub/redstone",
+        "wawo:crafting_shaped/waypoint_hub/resin",
         "wawo:crafting_shaped/totem_of_homecoming"
       ]
     }

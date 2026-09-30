@@ -114,6 +114,19 @@ $dialog show @s \
         "end":128,\
         "step":1,\
         "initial":$(player_limit)\
+      },\
+      {\
+        "type":"minecraft:number_range",\
+        "key":"warmup",\
+        "width": 256,\
+        "label":{\
+          "translate":"option.warping_wonders.warmup",\
+          "fallback":"Teleport Warm-Up in Seconds"\
+        },\
+        "start":0,\
+        "end":10,\
+        "step":1,\
+        "initial":$(warmup)\
       }\
   ],\
   "can_close_with_escape":true,\

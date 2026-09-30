@@ -37,5 +37,16 @@ execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.purpur] at @s run loot
 execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.quartz] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/quartz
 execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.spruce] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/spruce
 execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.warped] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/warped
+execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.cinnabar] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/cinnabar
+execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.diamond] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/diamond
+execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.emerald] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/emerald
+execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.golden] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/golden
+execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.iron] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/iron
+execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.lodestone] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/lodestone
+execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.netherite] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/netherite
+execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.poplar] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/poplar
+execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.red_nether_bricks] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/red_nether_bricks
+execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.redstone] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/redstone
+execute as @e[type=armor_stand,tag=wawo.waypoint_hub.type.resin] at @s run loot spawn ~ ~ ~ loot wawo:item/waypoint_hub/resin
 
 kill @s

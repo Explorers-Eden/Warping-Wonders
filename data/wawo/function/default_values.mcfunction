@@ -52,9 +52,10 @@ active_initial: "false",\
 exp_cost:5,\
 min_distance:64,\
 player_limit:32,\
+warmup:3,\
 mob_teleport:"enabled",\
 mob_teleport_initial:"false",\
-command_template: "function wawo:dialog/command_template/waypoint_hub {active:$(active),exp_cost:$(exp_cost),min_distance:$(min_distance),player_limit:$(player_limit),mob_teleport:$(mob_teleport)}"\
+command_template: "function wawo:dialog/command_template/waypoint_hub {active:$(active),exp_cost:$(exp_cost),min_distance:$(min_distance),player_limit:$(player_limit),mob_teleport:$(mob_teleport),warmup:$(warmup)}"\
 }
 
 scoreboard players set $max_limit wawo.waypoint_hub.player.limit 32

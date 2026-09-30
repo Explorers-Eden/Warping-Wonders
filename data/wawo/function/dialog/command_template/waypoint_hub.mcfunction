@@ -1,4 +1,4 @@
-$data modify storage eden:settings warping_wonders.waypoint_hub merge value {active:$(active),exp_cost:$(exp_cost),mob_teleport:$(mob_teleport),min_distance:$(min_distance),player_limit:$(player_limit)}
+$data modify storage eden:settings warping_wonders.waypoint_hub merge value {active:$(active),exp_cost:$(exp_cost),mob_teleport:$(mob_teleport),min_distance:$(min_distance),player_limit:$(player_limit),warmup:$(warmup)}
 
 execute if data storage eden:settings warping_wonders.waypoint_hub{active:"enabled"} run data modify storage eden:settings warping_wonders.waypoint_hub.active_initial set value "false"
 execute unless data storage eden:settings warping_wonders.waypoint_hub{active:"enabled"} run data modify storage eden:settings warping_wonders.waypoint_hub.active_initial set value "true"
