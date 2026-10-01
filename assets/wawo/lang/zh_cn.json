@@ -100,5 +100,19 @@
     "message.warping_wonders.portal_horn.request": "send you a teleport request.",
     "message.warping_wonders.portal_horn.prompt": "[Click to accept]",
     "message.warping_wonders.portal_horn.request_send": "has received your teleport request.",
-    "option.warping_wonders.close": "Close"
+    "option.warping_wonders.close": "Close",
+    "item.warping_wonders.cinnabar_waypoint_hub": "Cinnabar Waypoint Hub",
+    "item.warping_wonders.diamond_waypoint_hub": "Diamond Waypoint Hub",
+    "item.warping_wonders.emerald_waypoint_hub": "Emerald Waypoint Hub",
+    "item.warping_wonders.golden_waypoint_hub": "Golden Waypoint Hub",
+    "item.warping_wonders.iron_waypoint_hub": "Iron Waypoint Hub",
+    "item.warping_wonders.lodestone_waypoint_hub": "Lodestone Waypoint Hub",
+    "item.warping_wonders.netherite_waypoint_hub": "Netherite Waypoint Hub",
+    "item.warping_wonders.poplar_waypoint_hub": "Poplar Waypoint Hub",
+    "item.warping_wonders.red_nether_bricks_waypoint_hub": "Red Nether Brick Waypoint Hub",
+    "item.warping_wonders.redstone_waypoint_hub": "Redstone Waypoint Hub",
+    "item.warping_wonders.resin_waypoint_hub": "Resin Waypoint Hub",
+    "message.warping_wonders.waypoint_hub.warmup": "Teleporting in",
+    "message.warping_wonders.waypoint_hub.warmup_cancelled": "Teleport cancelled.",
+    "option.warping_wonders.warmup": "Teleport Warm-Up in Seconds"
 }
