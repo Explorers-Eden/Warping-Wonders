@@ -152,7 +152,7 @@ $dialog show @s \
   },\
   "no":{\
     "label":{\
-      "translate":"gui.back",\
+      "translate":"option.wawo.back",\
       "fallback":"Back"\
     },\
     "action":{\

@@ -4,7 +4,7 @@ $execute if data storage eden:settings warping_wonders.waypoint_hub{mob_teleport
         run tp @s $(relative_coords)
 
 $execute if data storage eden:settings warping_wonders.waypoint_hub{mob_teleport:"enabled"} \
-    as @e[type=#nice_actions:is_pet,distance=..24] \
+    as @e[type=#wawo:is_pet,distance=..24] \
     if data entity @s {Owner:$(uuid)} \
     unless data entity @s {Sitting:1b} \
     in $(dimension) positioned $(x) $(y) $(z) \

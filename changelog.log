@@ -1,6 +1,6 @@
 # Minecraft Version(s): 26.3
 ## Changes:
-- Added new Waypoint Types: Cinnabar, Diamond, Emerald, Golden, Iron, Lodestone, Netherite, Poplar, Red Nether Bricks, Redstone & Resin
-- Added a configurable teleport warm-up for Waypoint Hubs (cancelled when moving, taking damage or disconnecting)
 
 ## Fixes:
+- Waypoint Hub and Totem of Homecoming teleports not working without Nice Actions installed
+- Back buttons in menus not showing their label

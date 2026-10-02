@@ -30,4 +30,4 @@ execute unless data storage eden:settings warping_wonders.waypoint_hub.warmup ru
 execute as @a[tag=wawo.waypoint_hub.warmup.active] run function wawo:waypoint_hub/properties/teleport/warmup/clear
 
 ##set data pack version
-data modify storage eden:datapack warping_wonders.version set value "3.9"
+data modify storage eden:datapack warping_wonders.version set value "4.0"
