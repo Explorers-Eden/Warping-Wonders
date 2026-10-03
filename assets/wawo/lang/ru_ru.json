@@ -114,5 +114,6 @@
     "item.warping_wonders.resin_waypoint_hub": "Resin Waypoint Hub",
     "message.warping_wonders.waypoint_hub.warmup": "Teleporting in",
     "message.warping_wonders.waypoint_hub.warmup_cancelled": "Teleport cancelled.",
-    "option.warping_wonders.warmup": "Teleport Warm-Up in Seconds"
+    "option.warping_wonders.warmup": "Teleport Warm-Up in Seconds",
+    "option.wawo.back": "Back"
 }
