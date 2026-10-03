@@ -29,5 +29,8 @@ execute unless data storage eden:settings warping_wonders.waypoint_hub.warmup ru
 ##cancel teleport warm-ups interrupted by a reload
 execute as @a[tag=wawo.waypoint_hub.warmup.active] run function wawo:waypoint_hub/properties/teleport/warmup/clear
 
+##start repeating loops
+function wawo:start
+
 ##set data pack version
-data modify storage eden:datapack warping_wonders.version set value "4.0"
+data modify storage eden:datapack warping_wonders.version set value "4.1"

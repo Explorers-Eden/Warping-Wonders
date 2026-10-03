@@ -1,6 +1,5 @@
 # Minecraft Version(s): 26.3
 ## Changes:
+- Repeating background tasks now start a few ticks apart after loading instead of all on the same tick, spreading out server load
 
 ## Fixes:
-- Waypoint Hub and Totem of Homecoming teleports not working without Nice Actions installed
-- Back buttons in menus not showing their label
