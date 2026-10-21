@@ -1,5 +1,6 @@
 # Minecraft Version(s): 26.3
 ## Changes:
-- Repeating background tasks now start a few ticks apart after loading instead of all on the same tick, spreading out server load
+- Added 7 new Waypoint Hub icons (left-click a hub to cycle through them)
 
 ## Fixes:
+- Cycling through the icons no longer has an empty click before it starts over with the owner's head
